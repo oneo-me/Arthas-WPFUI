@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroWindow.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroButton.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroTextButton.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroFocusButton.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroTextBox.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroTabControl.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroTextBlock.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroTabItem.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroSwitch.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroGroupBox.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroWaterfallFlow.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroMenuTabItem.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroMenuTabControl.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroTitleMenu.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroTitleMenuItem.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroMenuItem.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroMenuSeparator.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroContextMenu.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroScrollViewer.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroComboBox.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroComboBoxItem.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroVisualElement.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroProgressBar.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroRichTextBox.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroImage.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroExpander.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroCanvasGrid.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroPath.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
