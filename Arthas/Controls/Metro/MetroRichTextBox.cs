@@ -127,6 +127,9 @@ namespace Arthas.Controls.Metro
         public void AddLine(ImageSource image) { AddLine(image, (Action)null); }
         public void AddLine(string content, Action action) { AddLine(content, null, action); }
 
+        public void AddLine(string title, string url) { AddLine(title, () => System.Diagnostics.Process.Start(url)); }
+        public void Add(string title, string url){ Add(title, () => System.Diagnostics.Process.Start(url)); }
+
 
         public void Add(string content, RgbaColor rgba, Action action)
         {

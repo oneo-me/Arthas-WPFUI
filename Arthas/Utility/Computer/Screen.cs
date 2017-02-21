@@ -4,35 +4,67 @@ namespace Arthas.Utility.Computer
 {
     public class Screen
     {
+
+        static Screen()
+        {
+            var presentationSource = System.Windows.PresentationSource.FromVisual(System.Windows.Application.Current.MainWindow);
+            if (presentationSource?.CompositionTarget != null)
+            {
+                var m = presentationSource.CompositionTarget.TransformToDevice;
+                ScaleFactorX = m.M11;
+                ScaleFactorY = m.M22;
+            }
+        }
+
+        /// <summary>
+        /// 系统DPI的X缩放比
+        /// </summary>
+        public static double ScaleFactorX { get; } = 1.0;
+
+        /// <summary>
+        /// 系统DPI的Y缩放比
+        /// </summary>
+        public static double ScaleFactorY { get; } = 1.0;
+
+        /// <summary>
+        /// 屏幕逻辑宽度
+        /// </summary>
+        public static double ScreenWidthLogic => System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width / ScaleFactorX;
+
+        /// <summary>
+        /// 屏幕逻辑高度
+        /// </summary>
+        public static double ScreenHeightLogic => System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height / ScaleFactorY;
+
         /// <summary>
         /// 屏幕宽度
         /// </summary>
-        public static double ScreenWidth = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width;
+        public static double ScreenWidth => System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width;
 
         /// <summary>
         /// 屏幕高度
         /// </summary>
-        public static double ScreenHeight = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height;
+        public static double ScreenHeight => System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height;
 
         /// <summary>
         /// 工作区宽度
         /// </summary>
-        public static double WorkWidth = SystemInformation.WorkingArea.Width;
+        public static double WorkWidth => SystemInformation.WorkingArea.Width;
 
         /// <summary>
         /// 工作区高度
         /// </summary>
-        public static double WorkHeight = SystemInformation.WorkingArea.Height;
+        public static double WorkHeight => SystemInformation.WorkingArea.Height;
 
         /// <summary>
         /// 工作区左边
         /// </summary>
-        public static double WorkLeft = SystemInformation.WorkingArea.X;
+        public static double WorkLeft => SystemInformation.WorkingArea.X;
 
         /// <summary>
         /// 工作区顶部
         /// </summary>
-        public static double WorkTop = SystemInformation.WorkingArea.Y;
+        public static double WorkTop => SystemInformation.WorkingArea.Y;
 
         /// <summary>
         /// 获取任务栏宽度

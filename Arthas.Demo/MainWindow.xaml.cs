@@ -35,10 +35,10 @@ namespace Arthas.Demo
             rt1.AddLine("添加自定义颜色内容", new RgbaColor(255, 0, 0, 255));
             rt1.AddLine("添加自定义颜色内容可点击", new RgbaColor(255, 0, 0, 255), delegate { MessageBox.Show("你点击了我！"); });
 
-
             rt3.Clear();
 
             rt3.AddLine("内容追加测试（不换行添加）");
+            rt3.AddLine("http://www.baidu.com", "http://www.baidu.com");
             rt3.AddLine("中间的间距是Add(\"  \");方法添加的两个空格");
             rt3.AddLine();
 

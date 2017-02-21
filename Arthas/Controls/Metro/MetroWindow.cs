@@ -83,8 +83,8 @@ namespace Arthas.Controls.Metro
                     MaxWidth = Width;
                     MaxHeight = Height;
                 }
-                Left = (Screen.ScreenWidth - Width) / 2;
-                Top = (Screen.ScreenHeight - Height) / 3;
+                Left = (Screen.ScreenWidthLogic - Width) / 2;
+                Top = (Screen.ScreenHeightLogic - Height) / 3;
             };
             KeyUp += delegate (object sender, KeyEventArgs e)
             {
