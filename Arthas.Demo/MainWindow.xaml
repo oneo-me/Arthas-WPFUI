@@ -310,7 +310,7 @@
                                                 <Grid>
                                                     <StackPanel>
                                                         <Metro:MetroCanvasGrid Height="100" Margin="5"/>
-                                                        <Metro:MetroCanvasGrid Height="100" Margin="5" Background="Red" GridOpacity="0.5" IsApplyTheme="False" GridSize="8" CornerRadius="10"/>
+                                                        <Metro:MetroCanvasGrid Height="100" Margin="5" Background="Red" GridOpacity="0.5" IsApplyTheme="False" Viewport="0 0 20 20" CornerRadius="10"/>
                                                     </StackPanel>
                                                 </Grid>
                                             </Metro:MetroGroupBox>
