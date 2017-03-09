@@ -10,60 +10,60 @@
     <Metro:MetroWindow.Menu>
         <Metro:MetroTitleMenu>
             <Metro:MetroTitleMenuItem Header="多级菜单测试" Icon="Resources/titleMuenIcon.png">
-                <Metro:MetroMenuItem Header="二级菜单"/>
-                <Metro:MetroMenuItem Header="二级菜单" IsEnabled="False"/>
-                <Metro:MetroMenuItem Header="二级菜单"/>
-                <Metro:MetroMenuSeparator/>
-                <Metro:MetroMenuItem Header="二级菜单"/>
-                <Metro:MetroMenuItem Header="二级菜单" Icon="Resources/titleMuenIcon.png"/>
+                <Metro:MetroMenuItem Header="二级菜单" />
+                <Metro:MetroMenuItem Header="二级菜单" IsEnabled="False" />
+                <Metro:MetroMenuItem Header="二级菜单" />
+                <Metro:MetroMenuSeparator />
+                <Metro:MetroMenuItem Header="二级菜单" />
+                <Metro:MetroMenuItem Header="二级菜单" Icon="Resources/titleMuenIcon.png" />
                 <Metro:MetroMenuItem Header="内部是三级菜单" Icon="Resources/titleMuenIcon.png">
-                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
-                    <Metro:MetroMenuItem Header="三级菜单" IsEnabled="False" Icon="Resources/titleMuenIcon.png"/>
-                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
-                    <Metro:MetroMenuSeparator/>
-                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
+                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
+                    <Metro:MetroMenuItem Header="三级菜单" IsEnabled="False" Icon="Resources/titleMuenIcon.png" />
+                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
+                    <Metro:MetroMenuSeparator />
+                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
                     <Metro:MetroMenuItem Header="内部是三级菜单" Icon="Resources/titleMuenIcon.png">
-                        <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
-                        <Metro:MetroMenuItem Header="三级菜单" IsEnabled="False" Icon="Resources/titleMuenIcon.png"/>
-                        <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
-                        <Metro:MetroMenuSeparator/>
-                        <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
-                        <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
+                        <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
+                        <Metro:MetroMenuItem Header="三级菜单" IsEnabled="False" Icon="Resources/titleMuenIcon.png" />
+                        <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
+                        <Metro:MetroMenuSeparator />
+                        <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
+                        <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
                     </Metro:MetroMenuItem>
                 </Metro:MetroMenuItem>
-                <Metro:MetroMenuItem Header="二级菜单"/>
+                <Metro:MetroMenuItem Header="二级菜单" />
             </Metro:MetroTitleMenuItem>
-            <Metro:MetroTitleMenuItem Header="测试" IsEnabled="False" Icon="Resources/titleMuenIcon.png"/>
-            <Metro:MetroTitleMenuItem Header="测试" IsEnabled="False"/>
-            <Metro:MetroTitleMenuItem Header="文件"/>
-            <Metro:MetroTitleMenuItem Header="关于" Icon="Resources/titleMuenIcon.png"/>
+            <Metro:MetroTitleMenuItem Header="测试" IsEnabled="False" Icon="Resources/titleMuenIcon.png" />
+            <Metro:MetroTitleMenuItem Header="测试" IsEnabled="False" />
+            <Metro:MetroTitleMenuItem Header="文件" />
+            <Metro:MetroTitleMenuItem Header="关于" Icon="Resources/titleMuenIcon.png" />
         </Metro:MetroTitleMenu>
     </Metro:MetroWindow.Menu>
     <Metro:MetroWindow.ContextMenu>
         <Metro:MetroContextMenu>
-            <Metro:MetroMenuItem Header="二级菜单"/>
-            <Metro:MetroMenuItem Header="二级菜单" IsEnabled="False"/>
-            <Metro:MetroMenuItem Header="二级菜单"/>
-            <Metro:MetroMenuSeparator/>
-            <Metro:MetroMenuItem Header="二级菜单"/>
-            <Metro:MetroMenuItem Header="二级菜单" Icon="Resources/titleMuenIcon.png"/>
+            <Metro:MetroMenuItem Header="二级菜单" />
+            <Metro:MetroMenuItem Header="二级菜单" IsEnabled="False" />
+            <Metro:MetroMenuItem Header="二级菜单" />
+            <Metro:MetroMenuSeparator />
+            <Metro:MetroMenuItem Header="二级菜单" />
+            <Metro:MetroMenuItem Header="二级菜单" Icon="Resources/titleMuenIcon.png" />
             <Metro:MetroMenuItem Header="内部是三级菜单" Icon="Resources/titleMuenIcon.png">
-                <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
-                <Metro:MetroMenuItem Header="三级菜单" IsEnabled="False" Icon="Resources/titleMuenIcon.png"/>
-                <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
-                <Metro:MetroMenuSeparator/>
-                <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
+                <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
+                <Metro:MetroMenuItem Header="三级菜单" IsEnabled="False" Icon="Resources/titleMuenIcon.png" />
+                <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
+                <Metro:MetroMenuSeparator />
+                <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
                 <Metro:MetroMenuItem Header="内部是三级菜单" Icon="Resources/titleMuenIcon.png">
-                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
-                    <Metro:MetroMenuItem Header="三级菜单" IsEnabled="False" Icon="Resources/titleMuenIcon.png"/>
-                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
-                    <Metro:MetroMenuSeparator/>
-                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
-                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png"/>
+                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
+                    <Metro:MetroMenuItem Header="三级菜单" IsEnabled="False" Icon="Resources/titleMuenIcon.png" />
+                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
+                    <Metro:MetroMenuSeparator />
+                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
+                    <Metro:MetroMenuItem Header="三级菜单" Icon="Resources/titleMuenIcon.png" />
                 </Metro:MetroMenuItem>
             </Metro:MetroMenuItem>
-            <Metro:MetroMenuSeparator/>
-            <Metro:MetroMenuItem x:Name="exit" Header="退出程序"/>
+            <Metro:MetroMenuSeparator />
+            <Metro:MetroMenuItem x:Name="exit" Header="退出程序" />
         </Metro:MetroContextMenu>
     </Metro:MetroWindow.ContextMenu>
     <Grid>
@@ -71,33 +71,33 @@
             <Metro:MetroMenuTabItem Header="控件" Icon="Resources/icon.png" IconMove="Resources/iconMove.png">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition MinWidth="160" Width="Auto"/>
-                        <ColumnDefinition/>
+                        <ColumnDefinition MinWidth="160" Width="Auto" />
+                        <ColumnDefinition />
                     </Grid.ColumnDefinitions>
                     <Metro:MetroScrollViewer>
                         <Border BorderBrush="#19000000" BorderThickness="0,0,1,0">
                             <StackPanel x:Name="lists">
-                                <Metro:MetroExpander Header="Button" Hint="提示" Icon="Resources/tabIcon.png"/>
-                                <Metro:MetroExpander Header="Button" Hint="1 / 100"/>
+                                <Metro:MetroExpander Header="Button" Hint="提示" Icon="Resources/tabIcon.png" />
+                                <Metro:MetroExpander Header="Button" Hint="1 / 100" />
                                 <Metro:MetroExpander Header="Header" Hint="可以修改" HintBackground="#FFF15151">
                                     <StackPanel>
-                                        <Metro:MetroExpander Header="Button" Icon="Resources/tabIcon.png"/>
-                                        <Metro:MetroExpander Header="Button" Icon="Resources/tabIcon.png"/>
-                                        <Metro:MetroExpander Header="Button" Icon="Resources/tabIcon.png"/>
-                                        <Metro:MetroExpander Header="Button"/>
-                                        <Metro:MetroExpander Header="Button"/>
+                                        <Metro:MetroExpander Header="Button" Icon="Resources/tabIcon.png" />
+                                        <Metro:MetroExpander Header="Button" Icon="Resources/tabIcon.png" />
+                                        <Metro:MetroExpander Header="Button" Icon="Resources/tabIcon.png" />
+                                        <Metro:MetroExpander Header="Button" />
+                                        <Metro:MetroExpander Header="Button" />
                                     </StackPanel>
                                 </Metro:MetroExpander>
                                 <Metro:MetroExpander Header="Header" IsExpanded="True">
                                     <StackPanel>
-                                        <Metro:MetroExpander Header="子内容长标题测试" Icon="Resources/tabIcon.png" Hint="1 / 100"/>
-                                        <Metro:MetroExpander Header="Button"/>
-                                        <Metro:MetroExpander Header="Button"/>
-                                        <Metro:MetroExpander Header="Button"/>
+                                        <Metro:MetroExpander Header="子内容长标题测试" Icon="Resources/tabIcon.png" Hint="1 / 100" />
+                                        <Metro:MetroExpander Header="Button" />
+                                        <Metro:MetroExpander Header="Button" />
+                                        <Metro:MetroExpander Header="Button" />
                                     </StackPanel>
                                 </Metro:MetroExpander>
-                                <Metro:MetroExpander Header="Button"/>
-                                <Metro:MetroExpander Header="Button"/>
+                                <Metro:MetroExpander Header="Button" />
+                                <Metro:MetroExpander Header="Button" />
                             </StackPanel>
                         </Border>
                     </Metro:MetroScrollViewer>
@@ -110,8 +110,8 @@
                                             <Metro:MetroGroupBox Header="主题颜色（MetroColorPicker 实现）">
                                                 <Grid>
                                                     <WrapPanel Orientation="Horizontal">
-                                                        <Metro:MetroColorPicker x:Name="color1" Width="50" Height="50" Background="#6D819A" DefaultColor="#6D819A" Padding="5"/>
-                                                        <Metro:MetroColorPicker x:Name="color2" Width="50" Height="50" Background="#6D819A" DefaultColor="#6D819A" Padding="5" IsEnabled="False"/>
+                                                        <Metro:MetroColorPicker x:Name="color1" Width="50" Height="50" Background="#6D819A" DefaultColor="#6D819A" Padding="5" />
+                                                        <Metro:MetroColorPicker x:Name="color2" Width="50" Height="50" Background="#6D819A" DefaultColor="#6D819A" Padding="5" IsEnabled="False" />
                                                     </WrapPanel>
                                                 </Grid>
                                             </Metro:MetroGroupBox>
@@ -121,29 +121,29 @@
                                                 <Grid>
                                                     <StackPanel>
                                                         <Metro:MetroComboBox IsEnabled="False" Text="MetroComboBox" Icon="Resources/editIcon.png" Title="默认标题">
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem0"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem1"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem2"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem3"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem4"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem5"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem6"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem7"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem8"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem9"/>
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem0" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem1" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem2" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem3" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem4" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem5" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem6" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem7" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem8" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem9" />
                                                         </Metro:MetroComboBox>
-                                                        <Metro:MetroComboBox Text="MetroComboBox"/>
+                                                        <Metro:MetroComboBox Text="MetroComboBox" />
                                                         <Metro:MetroComboBox Text="MetroComboBox" Title="默认标题">
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem0"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem1"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem2"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem3"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem4"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem5"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem6"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem7"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem8"/>
-                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem9"/>
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem0" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem1" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem2" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem3" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem4" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem5" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem6" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem7" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem8" />
+                                                            <Metro:MetroComboBoxItem Content="MetroComboBoxItem9" />
                                                         </Metro:MetroComboBox>
                                                     </StackPanel>
                                                 </Grid>
@@ -154,12 +154,12 @@
                                                 <Grid>
                                                     <StackPanel>
                                                         <StackPanel Orientation="Horizontal">
-                                                            <CheckBox Content="CheckBox" Margin="5" IsEnabled="False"/>
-                                                            <CheckBox Content="CheckBox" Margin="5"/>
+                                                            <CheckBox Content="CheckBox" Margin="5" IsEnabled="False" />
+                                                            <CheckBox Content="CheckBox" Margin="5" />
                                                         </StackPanel>
                                                         <StackPanel Orientation="Horizontal">
-                                                            <CheckBox Content="CheckBox" Margin="5" IsEnabled="False" IsChecked="True"/>
-                                                            <CheckBox Content="CheckBox" Margin="5" IsChecked="True"/>
+                                                            <CheckBox Content="CheckBox" Margin="5" IsEnabled="False" IsChecked="True" />
+                                                            <CheckBox Content="CheckBox" Margin="5" IsChecked="True" />
                                                         </StackPanel>
                                                     </StackPanel>
                                                 </Grid>
@@ -176,10 +176,10 @@
                                             <Metro:MetroGroupBox Header="等待">
                                                 <Grid>
                                                     <StackPanel Background="#00000000">
-                                                        <Metro:MetroProgressBar Title="MetroProgressBar 等待禁用" Margin="60,5,5,5" ProgressBarState="Wait" IsEnabled="False"/>
-                                                        <Metro:MetroProgressBar x:Name="vis" Title="MetroProgressBar 等待" Margin="5" ProgressBarState="Wait"/>
-                                                        <Metro:MetroVisualElement Visual="{Binding ElementName=vis}" VisualOpacity="0.5" VisualBlurRadius="10" Width="{Binding ActualWidth,ElementName=vis}" Height="{Binding ActualHeight,ElementName=vis}"/>
-                                                        <Metro:MetroProgressBar Title="MetroProgressBar 等待调整大小" Margin="5,5,60,5" ProgressBarState="Wait" ProgressBarHeight="30" CornerRadius="15"/>
+                                                        <Metro:MetroProgressBar Title="MetroProgressBar 等待禁用" Margin="60,5,5,5" ProgressBarState="Wait" IsEnabled="False" />
+                                                        <Metro:MetroProgressBar x:Name="vis" Title="MetroProgressBar 等待" Margin="5" ProgressBarState="Wait" />
+                                                        <Metro:MetroVisualElement Visual="{Binding ElementName=vis}" VisualOpacity="0.5" VisualBlurRadius="10" Width="{Binding ActualWidth,ElementName=vis}" Height="{Binding ActualHeight,ElementName=vis}" />
+                                                        <Metro:MetroProgressBar Title="MetroProgressBar 等待调整大小" Margin="5,5,60,5" ProgressBarState="Wait" ProgressBarHeight="30" CornerRadius="15" />
                                                     </StackPanel>
                                                 </Grid>
                                             </Metro:MetroGroupBox>
@@ -189,12 +189,12 @@
                                                 <Grid>
                                                     <StackPanel>
                                                         <StackPanel Orientation="Horizontal">
-                                                            <RadioButton Content="CheckBox" Margin="5" IsEnabled="False"/>
-                                                            <RadioButton Content="CheckBox" Margin="5"/>
+                                                            <RadioButton Content="CheckBox" Margin="5" IsEnabled="False" />
+                                                            <RadioButton Content="CheckBox" Margin="5" />
                                                         </StackPanel>
                                                         <StackPanel Orientation="Horizontal">
-                                                            <RadioButton Content="CheckBox" Margin="5" IsEnabled="False" IsChecked="True"/>
-                                                            <RadioButton Content="CheckBox" Margin="5" IsChecked="True"/>
+                                                            <RadioButton Content="CheckBox" Margin="5" IsEnabled="False" IsChecked="True" />
+                                                            <RadioButton Content="CheckBox" Margin="5" IsChecked="True" />
                                                         </StackPanel>
                                                     </StackPanel>
                                                 </Grid>
@@ -204,10 +204,10 @@
                                             <Metro:MetroGroupBox Header="进度条">
                                                 <Grid>
                                                     <StackPanel Background="#00000000">
-                                                        <Metro:MetroProgressBar Margin="5" Value="15" ProgressBarHeight="30" CornerRadius="0" ProgressBarState="None" IsEnabled="False"/>
-                                                        <Metro:MetroProgressBar x:Name="pb1" Title="MetroProgressBar 调整" Margin="5" Value="20" ProgressBarHeight="20" CornerRadius="0" ProgressBarState="None" TextHorizontalAlignment="Center"/>
-                                                        <Metro:MetroProgressBar x:Name="pb2" Title="MetroProgressBar 正常" Margin="5" Value="0" TextHorizontalAlignment="Right" Maximum="50"/>
-                                                        <Metro:MetroProgressBar Title="MetroProgressBar 错误" Margin="5" Value="40" ProgressBarState="Error"/>
+                                                        <Metro:MetroProgressBar Margin="5" Value="15" ProgressBarHeight="30" CornerRadius="0" ProgressBarState="None" IsEnabled="False" />
+                                                        <Metro:MetroProgressBar x:Name="pb1" Title="MetroProgressBar 调整" Margin="5" Value="20" ProgressBarHeight="20" CornerRadius="0" ProgressBarState="None" TextHorizontalAlignment="Center" />
+                                                        <Metro:MetroProgressBar x:Name="pb2" Title="MetroProgressBar 正常" Margin="5" Value="0" TextHorizontalAlignment="Right" Maximum="50" />
+                                                        <Metro:MetroProgressBar Title="MetroProgressBar 错误" Margin="5" Value="40" ProgressBarState="Error" />
                                                     </StackPanel>
                                                 </Grid>
                                             </Metro:MetroGroupBox>
@@ -219,44 +219,44 @@
                                                         <Metro:MetroRichTextBox MaxHeight="50" Margin="5" IsEnabled="False">
                                                             <FlowDocument>
                                                                 <Paragraph>
-                                                                    <Run Text="禁用"/>
+                                                                    <Run Text="禁用" />
                                                                 </Paragraph>
                                                             </FlowDocument>
                                                         </Metro:MetroRichTextBox>
                                                         <Metro:MetroRichTextBox x:Name="rt1" Margin="5" MaxHeight="50" IsReadOnly="True">
                                                             <FlowDocument>
                                                                 <Paragraph>
-                                                                    <Run Text="阅读模式"/>
+                                                                    <Run Text="阅读模式" />
                                                                 </Paragraph>
                                                             </FlowDocument>
                                                         </Metro:MetroRichTextBox>
                                                         <Metro:MetroRichTextBox x:Name="rt3" MaxHeight="100" Margin="5" AutoLimitMouse="True">
                                                             <FlowDocument>
                                                                 <Paragraph>
-                                                                    <Run Text="追加内容"/>
+                                                                    <Run Text="追加内容" />
                                                                 </Paragraph>
                                                                 <Paragraph>
-                                                                    <Run Text="自动高度"/>
+                                                                    <Run Text="自动高度" />
                                                                 </Paragraph>
                                                             </FlowDocument>
                                                         </Metro:MetroRichTextBox>
                                                         <Metro:MetroRichTextBox Margin="5" MaxHeight="100" BorderThickness="0" CornerRadius="0" Background="#00000000" IsEnabled="False">
                                                             <FlowDocument>
                                                                 <Paragraph>
-                                                                    <Run Text="修改外观的 MetroRichTextBox"/>
+                                                                    <Run Text="修改外观的 MetroRichTextBox" />
                                                                 </Paragraph>
                                                                 <Paragraph>
-                                                                    <Run Text="禁用"/>
+                                                                    <Run Text="禁用" />
                                                                 </Paragraph>
                                                             </FlowDocument>
                                                         </Metro:MetroRichTextBox>
                                                         <Metro:MetroRichTextBox Margin="5" MaxHeight="100" BorderThickness="0" CornerRadius="0" Background="#00000000">
                                                             <FlowDocument>
                                                                 <Paragraph>
-                                                                    <Run Text="修改外观的 MetroRichTextBox"/>
+                                                                    <Run Text="修改外观的 MetroRichTextBox" />
                                                                 </Paragraph>
                                                                 <Paragraph>
-                                                                    <Run Text="正常"/>
+                                                                    <Run Text="正常" />
                                                                 </Paragraph>
                                                             </FlowDocument>
                                                         </Metro:MetroRichTextBox>
@@ -269,37 +269,37 @@
                                                 <Grid>
                                                     <StackPanel>
                                                         <TreeView IsEnabled="False" Margin="5">
-                                                            <TreeViewItem Header="TreeViewItem"/>
+                                                            <TreeViewItem Header="TreeViewItem" />
                                                             <TreeViewItem Header="TreeViewItem">
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
                                                             </TreeViewItem>
-                                                            <TreeViewItem Header="TreeViewItem"/>
+                                                            <TreeViewItem Header="TreeViewItem" />
                                                         </TreeView>
                                                         <TreeView IsEnabled="False" Margin="5">
-                                                            <TreeViewItem Header="TreeViewItem"/>
+                                                            <TreeViewItem Header="TreeViewItem" />
                                                             <TreeViewItem Header="TreeViewItem" IsExpanded="True">
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
                                                             </TreeViewItem>
-                                                            <TreeViewItem Header="TreeViewItem"/>
+                                                            <TreeViewItem Header="TreeViewItem" />
                                                         </TreeView>
                                                         <TreeView x:Name="treeView" Margin="5">
-                                                            <TreeViewItem Header="TreeViewItem"/>
+                                                            <TreeViewItem Header="TreeViewItem" />
                                                             <TreeViewItem Header="TreeViewItem">
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
-                                                                <TreeViewItem Header="TreeViewItem"/>
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
+                                                                <TreeViewItem Header="TreeViewItem" />
                                                             </TreeViewItem>
-                                                            <TreeViewItem Header="TreeViewItem"/>
+                                                            <TreeViewItem Header="TreeViewItem" />
                                                         </TreeView>
                                                     </StackPanel>
                                                 </Grid>
@@ -309,8 +309,8 @@
                                             <Metro:MetroGroupBox Header="画布背景">
                                                 <Grid>
                                                     <StackPanel>
-                                                        <Metro:MetroCanvasGrid Height="100" Margin="5"/>
-                                                        <Metro:MetroCanvasGrid Height="100" Margin="5" Background="Red" GridOpacity="0.5" IsApplyTheme="False" Viewport="0 0 20 20" CornerRadius="10"/>
+                                                        <Metro:MetroCanvasGrid Height="100" Margin="5" />
+                                                        <Metro:MetroCanvasGrid Height="100" Margin="5" Background="Red" GridOpacity="0.5" IsApplyTheme="False" Viewport="0 0 20 20" CornerRadius="10" />
                                                     </StackPanel>
                                                 </Grid>
                                             </Metro:MetroGroupBox>
@@ -319,8 +319,8 @@
                                             <Metro:MetroGroupBox Header="图片框">
                                                 <Grid>
                                                     <StackPanel>
-                                                        <Metro:MetroTextBlock Text="自动调整大小，不用管图片的PPI" Opacity="0.65"/>
-                                                        <Metro:MetroImage Source="Resources/pic.jpg" Margin="0,5,0,0"/>
+                                                        <Metro:MetroTextBlock Text="自动调整大小，不用管图片的PPI" Opacity="0.65" />
+                                                        <Metro:MetroImage Source="Resources/pic.jpg" Margin="0,5,0,0" />
                                                     </StackPanel>
                                                 </Grid>
                                             </Metro:MetroGroupBox>
@@ -328,26 +328,26 @@
                                         <Grid>
                                             <Metro:MetroGroupBox Header="开关">
                                                 <StackPanel>
-                                                    <Metro:MetroSwitch Content="关闭禁用" Margin="10" IsEnabled="False"/>
-                                                    <Metro:MetroSwitch Content="打开禁用" IsOpen="true" Margin="10" IsEnabled="False"/>
-                                                    <Metro:MetroSwitch Content="可以修改对齐方式" IsOpen="true" Margin="10" TextHorizontalAlignment="Right"/>
-                                                    <Metro:MetroSwitch x:Name="ts" Content="特殊动画" Margin="10" CornerRadius="100"/>
-                                                    <Metro:MetroSwitch Content="方块模式" Margin="10" CornerRadius="2" BorderCornerRadius="3"/>
+                                                    <Metro:MetroSwitch Content="关闭禁用" Margin="10" IsEnabled="False" />
+                                                    <Metro:MetroSwitch Content="打开禁用" IsChecked="true" Margin="10" IsEnabled="False" />
+                                                    <Metro:MetroSwitch Content="可以修改对齐方式" IsChecked="true" Margin="10" TextHorizontalAlignment="Right" />
+                                                    <Metro:MetroSwitch x:Name="ts" Content="特殊动画" Margin="10" CornerRadius="100" />
+                                                    <Metro:MetroSwitch Content="方块模式" Margin="10" CornerRadius="2" BorderCornerRadius="3" />
                                                 </StackPanel>
                                             </Metro:MetroGroupBox>
                                         </Grid>
                                         <Grid>
                                             <Metro:MetroGroupBox Header="编辑框">
                                                 <StackPanel>
-                                                    <Metro:MetroTextBox x:Name="password" InputHint="PassWord Input Box!" IsPassWordBox="True" ButtonTitle="确定" PopupHint="请输入密码"/>
-                                                    <Metro:MetroTextBox InputHint="InputHint..." PopupHint="This is TextBox!" Margin="0,10,0,0"/>
-                                                    <Metro:MetroTextBox Margin="0,10,0,0"/>
-                                                    <Metro:MetroTextBox Title="Default Title" InputHint="InputHint..." PopupHint="This is TextBox!" Margin="0,10,0,0"/>
-                                                    <Metro:MetroTextBox x:Name="check" Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="Resources/editIcon.png"/>
-                                                    <Metro:MetroTextBox x:Name="check1" Text="0123456789" Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="Resources/editIcon.png"/>
-                                                    <Metro:MetroTextBox Title="Default Title" InputHint="InputHint..." Text="This is Content!" ButtonTitle="Button" PopupHint="这是一个多行编辑框!" Margin="0,10,0,0" Icon="Resources/editIcon.png" MultipleLine="True"/>
-                                                    <Metro:MetroTextBox Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="Resources/editIcon.png" IsEnabled="False"/>
-                                                    <Metro:MetroTextBox Title="Default Title" InputHint="InputHint..." Text="已经输入内容且禁用" ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="Resources/editIcon.png" IsEnabled="False"/>
+                                                    <Metro:MetroTextBox x:Name="password" InputHint="PassWord Input Box!" IsPassWordBox="True" ButtonTitle="确定" PopupHint="请输入密码" />
+                                                    <Metro:MetroTextBox InputHint="InputHint..." PopupHint="This is TextBox!" Margin="0,10,0,0" />
+                                                    <Metro:MetroTextBox Margin="0,10,0,0" />
+                                                    <Metro:MetroTextBox Title="Default Title" InputHint="InputHint..." PopupHint="This is TextBox!" Margin="0,10,0,0" />
+                                                    <Metro:MetroTextBox x:Name="check" Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="Resources/editIcon.png" />
+                                                    <Metro:MetroTextBox x:Name="check1" Text="0123456789" Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="Resources/editIcon.png" />
+                                                    <Metro:MetroTextBox Title="Default Title" InputHint="InputHint..." Text="This is Content!" ButtonTitle="Button" PopupHint="这是一个多行编辑框!" Margin="0,10,0,0" Icon="Resources/editIcon.png" MultipleLine="True" />
+                                                    <Metro:MetroTextBox Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="Resources/editIcon.png" IsEnabled="False" />
+                                                    <Metro:MetroTextBox Title="Default Title" InputHint="InputHint..." Text="已经输入内容且禁用" ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="Resources/editIcon.png" IsEnabled="False" />
                                                 </StackPanel>
                                             </Metro:MetroGroupBox>
                                         </Grid>
@@ -355,16 +355,16 @@
                                             <Metro:MetroGroupBox Header="按钮">
                                                 <StackPanel HorizontalAlignment="Center">
                                                     <StackPanel Orientation="Horizontal">
-                                                        <Metro:MetroButton MetroButtonState="None" Content="默认颜色" IsEnabled="False" Margin="10"/>
-                                                        <Metro:MetroButton MetroButtonState="None" Content="默认颜色" Margin="10"/>
+                                                        <Metro:MetroButton MetroButtonState="None" Content="默认颜色" IsEnabled="False" Margin="10" />
+                                                        <Metro:MetroButton MetroButtonState="None" Content="默认颜色" Margin="10" />
                                                     </StackPanel>
                                                     <StackPanel Orientation="Horizontal">
-                                                        <Metro:MetroButton MetroButtonState="Red" Content="错误颜色" IsEnabled="False" Margin="10"/>
-                                                        <Metro:MetroButton MetroButtonState="Red" Content="错误颜色" Margin="10"/>
+                                                        <Metro:MetroButton MetroButtonState="Red" Content="错误颜色" IsEnabled="False" Margin="10" />
+                                                        <Metro:MetroButton MetroButtonState="Red" Content="错误颜色" Margin="10" />
                                                     </StackPanel>
                                                     <StackPanel Orientation="Horizontal">
-                                                        <Metro:MetroButton MetroButtonState="Green" Content="正确颜色" IsEnabled="False" Margin="10"/>
-                                                        <Metro:MetroButton MetroButtonState="Green" Content="正确颜色" Margin="10"/>
+                                                        <Metro:MetroButton MetroButtonState="Green" Content="正确颜色" IsEnabled="False" Margin="10" />
+                                                        <Metro:MetroButton MetroButtonState="Green" Content="正确颜色" Margin="10" />
                                                     </StackPanel>
                                                 </StackPanel>
                                             </Metro:MetroGroupBox>
@@ -373,18 +373,18 @@
                                 </Metro:MetroScrollViewer>
                             </Grid>
                         </Metro:MetroTabItem>
-                        <Metro:MetroTabItem Header="测试标签"/>
+                        <Metro:MetroTabItem Header="测试标签" />
                     </Metro:MetroTabControl>
                 </Grid>
             </Metro:MetroMenuTabItem>
             <Metro:MetroMenuTabItem Header="内嵌文档浏览器" Icon="Resources/icon.png" IconMove="Resources/iconMove.png">
                 <Grid>
-                    <Metro:MetroWebBrowser x:Name="web1" Grid.Row="0"/>
+                    <Metro:MetroWebBrowser x:Name="web1" Grid.Row="0" />
                 </Grid>
             </Metro:MetroMenuTabItem>
             <Metro:MetroMenuTabItem Header="正常浏览器" Icon="Resources/icon.png" IconMove="Resources/iconMove.png">
                 <Grid>
-                    <Metro:MetroWebBrowser x:Name="web2" Grid.Row="1"/>
+                    <Metro:MetroWebBrowser x:Name="web2" Grid.Row="1" />
                 </Grid>
             </Metro:MetroMenuTabItem>
             <Metro:MetroMenuTabItem Header="瀑布流控件" Icon="Resources/icon.png" IconMove="Resources/iconMove.png">
@@ -393,102 +393,102 @@
                         <Metro:MetroWaterfallFlow ListWidth="180">
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="500">
-                                    <Metro:MetroTextBlock FontSize="30" Text="1" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="1" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="100">
-                                    <Metro:MetroTextBlock FontSize="30" Text="2" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="2" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="200">
-                                    <Metro:MetroTextBlock FontSize="30" Text="3" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="3" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="300">
-                                    <Metro:MetroTextBlock FontSize="30" Text="4" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="4" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="400">
-                                    <Metro:MetroTextBlock FontSize="30" Text="5" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="5" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="300">
-                                    <Metro:MetroTextBlock FontSize="30" Text="6" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="6" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="200">
-                                    <Metro:MetroTextBlock FontSize="30" Text="7" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="7" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="100">
-                                    <Metro:MetroTextBlock FontSize="30" Text="8" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="8" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="300">
-                                    <Metro:MetroTextBlock FontSize="30" Text="9" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="9" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="200">
-                                    <Metro:MetroTextBlock FontSize="30" Text="10" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="10" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="500">
-                                    <Metro:MetroTextBlock FontSize="30" Text="11" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="11" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="400">
-                                    <Metro:MetroTextBlock FontSize="30" Text="12" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="12" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="200">
-                                    <Metro:MetroTextBlock FontSize="30" Text="13" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="13" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="100">
-                                    <Metro:MetroTextBlock FontSize="30" Text="14" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="14" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="50">
-                                    <Metro:MetroTextBlock FontSize="30" Text="15" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="15" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="50">
-                                    <Metro:MetroTextBlock FontSize="30" Text="16" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="16" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="80">
-                                    <Metro:MetroTextBlock FontSize="30" Text="17" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="17" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="90">
-                                    <Metro:MetroTextBlock FontSize="30" Text="18" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="18" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="40">
-                                    <Metro:MetroTextBlock FontSize="30" Text="19" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="19" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                             <Grid>
                                 <Border BorderBrush="#33000000" BorderThickness="1" Height="200">
-                                    <Metro:MetroTextBlock FontSize="30" Text="20" Margin="7,0,0,0" Opacity="0.65"/>
+                                    <Metro:MetroTextBlock FontSize="30" Text="20" Margin="7,0,0,0" Opacity="0.65" />
                                 </Border>
                             </Grid>
                         </Metro:MetroWaterfallFlow>
@@ -502,17 +502,17 @@
                             <Grid Opacity="0.2" Width="600" Height="600">
                                 <Grid.Background>
                                     <RadialGradientBrush>
-                                        <GradientStop Color="Black" Offset="0"/>
-                                        <GradientStop Color="Black" Offset="1"/>
-                                        <GradientStop Color="#00000000" Offset="1"/>
+                                        <GradientStop Color="Black" Offset="0" />
+                                        <GradientStop Color="Black" Offset="1" />
+                                        <GradientStop Color="#00000000" Offset="1" />
                                     </RadialGradientBrush>
                                 </Grid.Background>
                             </Grid>
                         </Grid>
                     </Metro:MetroScrollViewer>
                     <StackPanel Margin="0,-200,0,0" VerticalAlignment="Center">
-                        <Metro:MetroTextBlock Text="按住左Ctrl并滚动，可以横向滚动视图" HorizontalAlignment="Center" Opacity="0.65" FontSize="18"/>
-                        <Metro:MetroTextBlock Text="鼠标移动到滚动条，出现操作区域" HorizontalAlignment="Center" Opacity="0.65" FontSize="18" Margin="0,10,0,0"/>
+                        <Metro:MetroTextBlock Text="按住左Ctrl并滚动，可以横向滚动视图" HorizontalAlignment="Center" Opacity="0.65" FontSize="18" />
+                        <Metro:MetroTextBlock Text="鼠标移动到滚动条，出现操作区域" HorizontalAlignment="Center" Opacity="0.65" FontSize="18" Margin="0,10,0,0" />
                     </StackPanel>
                 </Grid>
             </Metro:MetroMenuTabItem>
