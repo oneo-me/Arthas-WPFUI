@@ -19,8 +19,7 @@ namespace Arthas.Demo
                 BorderBrush = color1.CurrentColor.OpaqueSolidColorBrush;
             };
 
-            ts.IsOpen = true;
-
+            ts.IsChecked = true;
 
             exit.Click += delegate { Close(); };
 
@@ -78,8 +77,6 @@ namespace Arthas.Demo
             rt3.Add("颜色3", new RgbaColor(0, 0, 255, 255), delegate { MessageBox.Show("你点击了我！"); });
             rt3.AddLine();
 
-
-
             DispatcherTimer timer = new DispatcherTimer();
             timer.Tick += delegate
             {
@@ -99,7 +96,6 @@ namespace Arthas.Demo
                 // 导航到指定网页
                 web2.Source = new Uri("http://ie.icoa.cn/");
             };
-
 
             foreach (FrameworkElement fe in lists.Children)
             {
