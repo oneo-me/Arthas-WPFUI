@@ -87,5 +87,42 @@ namespace Arthas.Controls.Metro
         {
             ElementBase.DefaultStyle<MetroWindow>(DefaultStyleKeyProperty);
         }
+        public static DependencyProperty ReloadCommandProperty
+= DependencyProperty.Register(
+    "ReloadCommand",
+    typeof(ICommand),
+    typeof(MetroWindow));
+
+        public static DependencyProperty SaveCommandProperty
+            = DependencyProperty.Register(
+                "SaveCommand",
+                typeof(ICommand),
+                typeof(MetroWindow));
+
+        public ICommand ReloadCommand
+        {
+            get
+            {
+                return (ICommand)GetValue(ReloadCommandProperty);
+            }
+
+            set
+            {
+                SetValue(ReloadCommandProperty, value);
+            }
+        }
+
+        public ICommand SaveCommand
+        {
+            get
+            {
+                return (ICommand)GetValue(SaveCommandProperty);
+            }
+
+            set
+            {
+                SetValue(SaveCommandProperty, value);
+            }
+        }
     }
 }

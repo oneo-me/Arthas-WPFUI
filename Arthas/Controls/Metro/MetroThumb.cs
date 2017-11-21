@@ -2,6 +2,7 @@
 using System;
 using System.Windows;
 using System.Windows.Controls.Primitives;
+using System.Windows.Input;
 
 namespace Arthas.Controls.Metro
 {
@@ -61,6 +62,43 @@ namespace Arthas.Controls.Metro
         void Change()
         {
             if (ValueChange != null) { ValueChange(this, null); }
+        }
+        public static DependencyProperty ReloadCommandProperty
+= DependencyProperty.Register(
+    "ReloadCommand",
+    typeof(ICommand),
+    typeof(MetroThumb));
+
+        public static DependencyProperty SaveCommandProperty
+            = DependencyProperty.Register(
+                "SaveCommand",
+                typeof(ICommand),
+                typeof(MetroThumb));
+
+        public ICommand ReloadCommand
+        {
+            get
+            {
+                return (ICommand)GetValue(ReloadCommandProperty);
+            }
+
+            set
+            {
+                SetValue(ReloadCommandProperty, value);
+            }
+        }
+
+        public ICommand SaveCommand
+        {
+            get
+            {
+                return (ICommand)GetValue(SaveCommandProperty);
+            }
+
+            set
+            {
+                SetValue(SaveCommandProperty, value);
+            }
         }
     }
 }

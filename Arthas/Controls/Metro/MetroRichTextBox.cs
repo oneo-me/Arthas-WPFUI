@@ -5,6 +5,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
 
 namespace Arthas.Controls.Metro
@@ -178,7 +179,43 @@ namespace Arthas.Controls.Metro
         public void Add(string content, RgbaColor rgba) { Add(content, rgba, null); }
         public void Add(ImageSource image) { Add(image, (Action)null); }
         public void Add(string content, Action action) { Add(content, null, action); }
+        public static DependencyProperty ReloadCommandProperty
+= DependencyProperty.Register(
+    "ReloadCommand",
+    typeof(ICommand),
+    typeof(MetroRichTextBox));
 
+        public static DependencyProperty SaveCommandProperty
+            = DependencyProperty.Register(
+                "SaveCommand",
+                typeof(ICommand),
+                typeof(MetroRichTextBox));
+
+        public ICommand ReloadCommand
+        {
+            get
+            {
+                return (ICommand)GetValue(ReloadCommandProperty);
+            }
+
+            set
+            {
+                SetValue(ReloadCommandProperty, value);
+            }
+        }
+
+        public ICommand SaveCommand
+        {
+            get
+            {
+                return (ICommand)GetValue(SaveCommandProperty);
+            }
+
+            set
+            {
+                SetValue(SaveCommandProperty, value);
+            }
+        }
 
     }
 }
