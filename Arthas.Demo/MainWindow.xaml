@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:Arthas.Demo"
         xmlns:Metro="clr-namespace:Arthas.Controls.Metro;assembly=Arthas"
         mc:Ignorable="d"
-        Title="Arthas.Demo" d:DesignWidth="1600" d:DesignHeight="1200" MinWidth="1" MinHeight="1" BorderThickness="1" WindowStyle="None">
+        Title="{Binding Title}" d:DesignWidth="1600" d:DesignHeight="1200" MinWidth="1" MinHeight="1" BorderThickness="1" WindowStyle="None">
+    <Metro:MetroWindow.DataContext>
+        <local:MainWindowVM/>
+    </Metro:MetroWindow.DataContext>
     <Metro:MetroWindow.Menu>
         <Metro:MetroTitleMenu>
             <Metro:MetroTitleMenuItem Header="多级菜单测试" Icon="Resources/titleMuenIcon.png">
@@ -356,15 +359,15 @@
                                                 <StackPanel HorizontalAlignment="Center">
                                                     <StackPanel Orientation="Horizontal">
                                                         <Metro:MetroButton MetroButtonState="None" Content="默认颜色" IsEnabled="False" Margin="10" />
-                                                        <Metro:MetroButton MetroButtonState="None" Content="默认颜色" Margin="10" />
+                                                        <Metro:MetroButton MetroButtonState="None" Content="默认颜色" Command="{Binding CmdSample}" IsEnabled="{Binding BtnEnabled}" Margin="10" />
                                                     </StackPanel>
                                                     <StackPanel Orientation="Horizontal">
                                                         <Metro:MetroButton MetroButtonState="Red" Content="错误颜色" IsEnabled="False" Margin="10" />
-                                                        <Metro:MetroButton MetroButtonState="Red" Content="错误颜色" Margin="10" />
+                                                        <Metro:MetroButton MetroButtonState="Red" Content="错误颜色" Command="{Binding CmdSampleWithParam}" CommandParameter="Bad" IsEnabled="{Binding BtnEnabled}" Margin="10" />
                                                     </StackPanel>
                                                     <StackPanel Orientation="Horizontal">
                                                         <Metro:MetroButton MetroButtonState="Green" Content="正确颜色" IsEnabled="False" Margin="10" />
-                                                        <Metro:MetroButton MetroButtonState="Green" Content="正确颜色" Margin="10" />
+                                                        <Metro:MetroButton MetroButtonState="Green" Content="正确颜色" Command="{Binding CmdSampleWithParam}" CommandParameter="Good" IsEnabled="{Binding BtnEnabled}" Margin="10" />
                                                     </StackPanel>
                                                 </StackPanel>
                                             </Metro:MetroGroupBox>
