@@ -1,6 +1,7 @@
 ﻿using Arthas.Utility.Element;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 
 namespace Arthas.Controls.Metro
@@ -18,6 +19,43 @@ namespace Arthas.Controls.Metro
         static MetroMenuTabItem()
         {
             ElementBase.DefaultStyle<MetroMenuTabItem>(DefaultStyleKeyProperty);
+        }
+        public static DependencyProperty ReloadCommandProperty
+= DependencyProperty.Register(
+    "ReloadCommand",
+    typeof(ICommand),
+    typeof(MetroMenuTabItem));
+
+        public static DependencyProperty SaveCommandProperty
+            = DependencyProperty.Register(
+                "SaveCommand",
+                typeof(ICommand),
+                typeof(MetroMenuTabItem));
+
+        public ICommand ReloadCommand
+        {
+            get
+            {
+                return (ICommand)GetValue(ReloadCommandProperty);
+            }
+
+            set
+            {
+                SetValue(ReloadCommandProperty, value);
+            }
+        }
+
+        public ICommand SaveCommand
+        {
+            get
+            {
+                return (ICommand)GetValue(SaveCommandProperty);
+            }
+
+            set
+            {
+                SetValue(SaveCommandProperty, value);
+            }
         }
     }
 }
