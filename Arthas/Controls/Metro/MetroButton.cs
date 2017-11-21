@@ -1,5 +1,6 @@
 ﻿using Arthas.Utility.Element;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 
 namespace Arthas.Controls.Metro
@@ -11,7 +12,7 @@ namespace Arthas.Controls.Metro
         Green
     }
 
-    public class MetroButton : ButtonBase
+    public class MetroButton : Button
     {
         public static readonly DependencyProperty MetroButtonStateProperty = ElementBase.Property<MetroButton, ButtonState>(nameof(MetroButtonStateProperty), ButtonState.None);
 
