@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 
-namespace Arthas.Controls.Metro
+namespace Arthas.Controls
 {
     public enum ButtonState
     {

@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace Arthas.Controls.Metro
+namespace Arthas.Controls
 {
     public partial class MetroColorPicker : UserControl
     {

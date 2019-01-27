@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Arthas.Controls.Metro
+namespace Arthas.Controls
 {
     public class MetroWaterfallFlow : Canvas
     {

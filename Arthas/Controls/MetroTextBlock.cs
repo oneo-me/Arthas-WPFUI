@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Arthas.Controls.Metro
+namespace Arthas.Controls
 {
     /*
     public class MetroTextBlock : ContentControl

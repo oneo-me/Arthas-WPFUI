@@ -7,7 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Media;
 
-namespace Arthas.Controls.Metro
+namespace Arthas.Controls
 {
     public class MetroRichTextBox : RichTextBox
     {

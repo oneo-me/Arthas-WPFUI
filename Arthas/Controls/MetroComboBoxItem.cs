@@ -1,7 +1,7 @@
 ﻿using Arthas.Utility.Element;
 using System.Windows.Controls;
 
-namespace Arthas.Controls.Metro
+namespace Arthas.Controls
 {
     public class MetroComboBoxItem : ComboBoxItem
     {

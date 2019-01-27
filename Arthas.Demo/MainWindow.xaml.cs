@@ -1,7 +1,6 @@
-﻿using Arthas.Controls.Metro;
+﻿using Arthas.Controls;
 using Arthas.Utility.Media;
 using System;
-using System.Reflection;
 using System.Windows;
 using System.Windows.Threading;
 
@@ -87,8 +86,6 @@ namespace Arthas.Demo
             };
             timer.Interval = new TimeSpan(0, 0, 0, 0, 20);
             timer.Start();
-
-    
 
             foreach (FrameworkElement fe in lists.Children)
             {

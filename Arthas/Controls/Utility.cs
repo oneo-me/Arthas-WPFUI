@@ -1,5 +1,4 @@
-﻿using Arthas.Controls.Metro;
-using Arthas.Utility.Media;
+﻿using Arthas.Utility.Media;
 using System.ComponentModel;
 using System.Windows;
 

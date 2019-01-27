@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace Arthas.Controls.Metro
+namespace Arthas.Controls
 {
     public class MetroMenuTabControl : TabControl
     {

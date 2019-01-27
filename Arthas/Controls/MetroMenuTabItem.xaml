@@ -1,8 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:Metro="clr-namespace:Arthas.Controls.Metro">
+                    xmlns:Metro="clr-namespace:Arthas.Controls">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Arthas;component/Themes/Metro/MetroBase.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Controls/MetroBase.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type Metro:MetroMenuTabItem}">

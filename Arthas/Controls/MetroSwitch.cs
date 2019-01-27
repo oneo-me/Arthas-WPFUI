@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls.Primitives;
 
-namespace Arthas.Controls.Metro
+namespace Arthas.Controls
 {
     public class MetroSwitch : ToggleButton
     {
