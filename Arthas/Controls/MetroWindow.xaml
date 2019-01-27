@@ -53,7 +53,6 @@
         <Setter Property="BorderBrush" Value="{StaticResource Brush}" />
         <Setter Property="Foreground" Value="#FF000000" />
         <Setter Property="TitleForeground" Value="#ffffff" />
-        <Setter Property="Icon" Value="/Arthas;component/Resources/Icon.png" />
         <Setter Property="BorderThickness" Value="1" />
 
         <Setter Property="FontSize" Value="12" />

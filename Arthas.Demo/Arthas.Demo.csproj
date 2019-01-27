@@ -11,7 +11,4 @@
     <ItemGroup>
         <Resource Include="Resources\**" />
     </ItemGroup>
-    <ItemGroup>
-      <Resource Remove="Resources\WindowIcon.png" />
-    </ItemGroup>
 </Project>

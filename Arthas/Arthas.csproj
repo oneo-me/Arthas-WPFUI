@@ -4,9 +4,4 @@
         <LangVersion>latest</LangVersion>
         <UseWPF>true</UseWPF>
     </PropertyGroup>
-    <ItemGroup>
-      <Page Update="Controls\MetroWindow.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </Page>
-    </ItemGroup>
 </Project>
