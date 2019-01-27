@@ -30,7 +30,6 @@ namespace Arthas.Utility.Media
 
             if (rgba.R == rgba.G && rgba.R == rgba.B)
             {
-
             }
             else
             {
@@ -63,31 +62,37 @@ namespace Arthas.Utility.Media
                     g = t;
                     b = p;
                     break;
+
                 case 1:
                     r = q;
                     g = hsba.B;
                     b = p;
                     break;
+
                 case 2:
                     r = p;
                     g = hsba.B;
                     b = t;
                     break;
+
                 case 3:
                     r = p;
                     g = q;
                     b = hsba.B;
                     break;
+
                 case 4:
                     r = t;
                     g = p;
                     b = hsba.B;
                     break;
+
                 case 5:
                     r = hsba.B;
                     g = p;
                     b = q;
                     break;
+
                 default:
                     break;
             }
@@ -102,7 +107,6 @@ namespace Arthas.Utility.Media
         /// <returns></returns>
         internal static byte[] BitmapToByte(Bitmap bitmap)
         {
-
             byte[] bytes = new byte[bitmap.Width * bitmap.Height * 4];
             BitmapData bitmapData = bitmap.LockBits(new Rectangle(0, 0, bitmap.Width, bitmap.Height), ImageLockMode.ReadOnly, bitmap.PixelFormat);
             Marshal.Copy(bitmapData.Scan0, bytes, 0, bytes.Length);
@@ -128,7 +132,6 @@ namespace Arthas.Utility.Media
             return color;
         }
         */
-
 
         /// <summary>
         /// 读取指定图片到内存
@@ -178,9 +181,6 @@ namespace Arthas.Utility.Media
             return Imaging.CreateBitmapSourceFromHBitmap(bitmap.GetHbitmap(), IntPtr.Zero, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
         }
 
-
-
-
         /// <summary>
         /// 获取颜色亮度
         /// </summary>
@@ -188,7 +188,7 @@ namespace Arthas.Utility.Media
         /// <param name="g"></param>
         /// <param name="b"></param>
         /// <returns></returns>
-        internal static int GetBrightness(int r,int g,int b)
+        internal static int GetBrightness(int r, int g, int b)
         {
             return (int)((0.2126 * r + 0.7152 * g + 0.0722 * b) / 2.55);
         }

@@ -32,7 +32,7 @@ namespace Arthas.Controls
             Utility.Refresh(this);
             ValueChanged += delegate
             {
-                if (Hint == null||Hint.EndsWith(" %"))
+                if (Hint == null || Hint.EndsWith(" %"))
                 {
                     Hint = ((int)(Value / Maximum * 100)).ToString() + " %";
                 }

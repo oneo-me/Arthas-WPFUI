@@ -104,6 +104,7 @@ namespace Arthas.Controls
             }
             ScrollToEnd();
         }
+
         public void AddLine(ImageSource image, Action action)
         {
             if (action == null)
@@ -121,15 +122,40 @@ namespace Arthas.Controls
             ScrollToEnd();
         }
 
-        public void AddLine() { AddLine("", (Action)null); }
-        public void AddLine(string content) { AddLine(content, (Action)null); }
-        public void AddLine(string content, RgbaColor rgba) { AddLine(content, rgba, null); }
-        public void AddLine(ImageSource image) { AddLine(image, (Action)null); }
-        public void AddLine(string content, Action action) { AddLine(content, null, action); }
+        public void AddLine()
+        {
+            AddLine("", (Action)null);
+        }
 
-        public void AddLine(string title, string url) { AddLine(title, () => System.Diagnostics.Process.Start(url)); }
-        public void Add(string title, string url){ Add(title, () => System.Diagnostics.Process.Start(url)); }
+        public void AddLine(string content)
+        {
+            AddLine(content, (Action)null);
+        }
 
+        public void AddLine(string content, RgbaColor rgba)
+        {
+            AddLine(content, rgba, null);
+        }
+
+        public void AddLine(ImageSource image)
+        {
+            AddLine(image, (Action)null);
+        }
+
+        public void AddLine(string content, Action action)
+        {
+            AddLine(content, null, action);
+        }
+
+        public void AddLine(string title, string url)
+        {
+            AddLine(title, () => System.Diagnostics.Process.Start(url));
+        }
+
+        public void Add(string title, string url)
+        {
+            Add(title, () => System.Diagnostics.Process.Start(url));
+        }
 
         public void Add(string content, RgbaColor rgba, Action action)
         {
@@ -153,6 +179,7 @@ namespace Arthas.Controls
             }
             ScrollToEnd();
         }
+
         public void Add(ImageSource image, Action action)
         {
             if (Document.Blocks.Count <= 0)
@@ -174,11 +201,24 @@ namespace Arthas.Controls
             ScrollToEnd();
         }
 
-        public void Add(string content) { Add(content, null, (Action)null); }
-        public void Add(string content, RgbaColor rgba) { Add(content, rgba, null); }
-        public void Add(ImageSource image) { Add(image, (Action)null); }
-        public void Add(string content, Action action) { Add(content, null, action); }
+        public void Add(string content)
+        {
+            Add(content, null, (Action)null);
+        }
 
+        public void Add(string content, RgbaColor rgba)
+        {
+            Add(content, rgba, null);
+        }
 
+        public void Add(ImageSource image)
+        {
+            Add(image, (Action)null);
+        }
+
+        public void Add(string content, Action action)
+        {
+            Add(content, null, action);
+        }
     }
 }

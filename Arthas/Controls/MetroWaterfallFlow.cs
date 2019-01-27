@@ -10,10 +10,12 @@ namespace Arthas.Controls
         int column;
         double listWidth = 180;
         public double ListWidth { get { return listWidth; } set { listWidth = value; SetColumn(); } }
+
         static MetroWaterfallFlow()
         {
             ElementBase.DefaultStyle<MetroWaterfallFlow>(DefaultStyleKeyProperty);
         }
+
         public MetroWaterfallFlow()
         {
             Loaded += delegate
@@ -54,7 +56,11 @@ namespace Arthas.Controls
             public int Index { get; set; }
             public double Buttom { get; set; }
             public double Height { get; set; }
-            public Point(int index, double height, double buttom) { Index = index;Height = height; Buttom = buttom; }
+
+            public Point(int index, double height, double buttom)
+            {
+                Index = index; Height = height; Buttom = buttom;
+            }
         }
 
         public void Refresh()
@@ -66,7 +72,7 @@ namespace Arthas.Controls
             for (int i = 0; i < Children.Count; i++)
             {
                 (Children[i] as FrameworkElement).UpdateLayout();
-                list.Add(i, new Point(i,(Children[i] as FrameworkElement).ActualHeight, 0.0));
+                list.Add(i, new Point(i, (Children[i] as FrameworkElement).ActualHeight, 0.0));
             }
             for (int i = 0; i < column; i++)
             {

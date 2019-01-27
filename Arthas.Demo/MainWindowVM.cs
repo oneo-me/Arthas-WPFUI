@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
@@ -11,12 +8,14 @@ namespace Arthas.Demo
     public class MainWindowVM : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+
         private void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         private string _title = "Arthas.Demo";
+
         public string Title
         {
             get { return _title; }
@@ -24,6 +23,7 @@ namespace Arthas.Demo
         }
 
         private bool _btnEnabled = true;
+
         public bool BtnEnabled
         {
             get { return _btnEnabled; }
@@ -31,6 +31,7 @@ namespace Arthas.Demo
         }
 
         private ICommand _cmdSample;
+
         public ICommand CmdSample => _cmdSample ?? (_cmdSample = new AsyncCommand(async () =>
         {
             Title = "Busy...";
@@ -42,6 +43,7 @@ namespace Arthas.Demo
         }));
 
         private ICommand _cmdSampleWithParam;
+
         public ICommand CmdSampleWithParam => _cmdSampleWithParam ?? (_cmdSampleWithParam = new AsyncCommand<string>(async str =>
         {
             Title = $"Hello I'm {str} currently";
@@ -110,5 +112,6 @@ namespace Arthas.Demo
             await _asyncExecute((T)parameter);
         }
     }
-    #endregion
+
+    #endregion Command
 }

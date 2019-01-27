@@ -37,9 +37,8 @@ namespace Arthas.Controls
         public bool IsPassWordBox { get { return (bool)GetValue(IsPassWordBoxProperty); } set { SetValue(IsPassWordBoxProperty, value); } }
         public CornerRadius CornerRadius { get { return (CornerRadius)GetValue(CornerRadiusProperty); } set { SetValue(CornerRadiusProperty, value); } }
 
-
-
         public Func<string, bool> ErrorCheckAction { get; set; }
+
         public event EventHandler ButtonClick;
 
         public MetroTextBox()

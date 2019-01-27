@@ -5,7 +5,6 @@ namespace Arthas.Controls
     /*
     public class MetroTextBlock : ContentControl
     {
-
         public static readonly DependencyProperty SpacingProperty = ElementBase.Property<MetroTextBlock, Thickness>(nameof(SpacingProperty), new Thickness(0.25));
         public Thickness Spacing
         {
@@ -24,8 +23,8 @@ namespace Arthas.Controls
         }
     }
     */
+
     public class MetroTextBlock : TextBlock
     {
-
     }
 }

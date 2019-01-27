@@ -20,7 +20,7 @@ namespace Arthas.Controls.Converter
         {
             if (parameter != null)
             {
-                return new CornerRadius((double)value/ System.Convert.ToDouble(parameter));
+                return new CornerRadius((double)value / System.Convert.ToDouble(parameter));
             }
             return new CornerRadius((double)value);
         }

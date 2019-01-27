@@ -5,7 +5,7 @@ using System.Windows.Media;
 
 namespace Arthas.Controls
 {
-    public class MetroVisualElement: ContentControl
+    public class MetroVisualElement : ContentControl
     {
         public static readonly DependencyProperty VisualProperty = ElementBase.Property<MetroVisualElement, Visual>(nameof(VisualProperty));
         public static readonly DependencyProperty VisualOpacityProperty = ElementBase.Property<MetroVisualElement, double>(nameof(VisualOpacityProperty));

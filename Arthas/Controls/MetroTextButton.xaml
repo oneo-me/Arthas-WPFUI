@@ -2,14 +2,14 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:Metro="clr-namespace:Arthas.Controls">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroBase.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Controls/MetroBase.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type Metro:MetroTextButton}">
-        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
 
-        <Setter Property="Foreground" Value="#000000"/>
+        <Setter Property="Foreground" Value="#000000" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Metro:MetroTextButton}">
@@ -18,32 +18,31 @@
                             <VisualStateGroup x:Name="CommonStates">
                                 <VisualState x:Name="Normal">
                                     <Storyboard>
-                                        <DoubleAnimation Storyboard.TargetName="text" Storyboard.TargetProperty="(UIElement.Opacity)" To="1" Duration="0:0:0.1"/>
+                                        <DoubleAnimation Storyboard.TargetName="text" Storyboard.TargetProperty="(UIElement.Opacity)" To="1" Duration="0:0:0.1" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="MouseOver">
                                     <Storyboard>
-                                        <DoubleAnimation Storyboard.TargetName="text" Storyboard.TargetProperty="(UIElement.Opacity)" To="0.8" Duration="0:0:0.1"/>
+                                        <DoubleAnimation Storyboard.TargetName="text" Storyboard.TargetProperty="(UIElement.Opacity)" To="0.8" Duration="0:0:0.1" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Pressed">
                                     <Storyboard>
-                                        <DoubleAnimation Storyboard.TargetName="text" Storyboard.TargetProperty="(UIElement.Opacity)" To="0.5" Duration="0:0:0.1"/>
+                                        <DoubleAnimation Storyboard.TargetName="text" Storyboard.TargetProperty="(UIElement.Opacity)" To="0.5" Duration="0:0:0.1" />
                                     </Storyboard>
                                 </VisualState>
-                                <VisualState x:Name="Disabled"/>
+                                <VisualState x:Name="Disabled" />
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
-                        <Metro:MetroTextBlock x:Name="text" Text="{TemplateBinding Content}" Foreground="{TemplateBinding Foreground}" FontSize="{TemplateBinding FontSize}" FontFamily="{TemplateBinding FontFamily}"/>
+                        <Metro:MetroTextBlock x:Name="text" Text="{TemplateBinding Content}" Foreground="{TemplateBinding Foreground}" FontSize="{TemplateBinding FontSize}" FontFamily="{TemplateBinding FontFamily}" />
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Opacity" Value="0.5"/>
+                            <Setter Property="Opacity" Value="0.5" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>

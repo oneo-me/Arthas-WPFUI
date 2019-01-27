@@ -2,17 +2,16 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:Metro="clr-namespace:Arthas.Controls">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroBase.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Controls/MetroBase.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type Metro:MetroMenuSeparator}">
-        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-        <Setter Property="Focusable" Value="false"/>
-        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="Focusable" Value="false" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
 
-        <Setter Property="Background" Value="#ffffff"/>
-        <Setter Property="Opacity" Value="0.3"/>
-        <Setter Property="Margin" Value="-30,2,0,2"/>
+        <Setter Property="Background" Value="#ffffff" />
+        <Setter Property="Opacity" Value="0.3" />
+        <Setter Property="Margin" Value="-30,2,0,2" />
     </Style>
-
 </ResourceDictionary>

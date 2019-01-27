@@ -2,15 +2,14 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:Metro="clr-namespace:Arthas.Controls">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroBase.xaml"/>
+        <ResourceDictionary Source="/Arthas;component/Controls/MetroBase.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type Metro:MetroWaterfallFlow}">
-        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
-        <Setter Property="SnapsToDevicePixels" Value="True"/>
-        <Setter Property="HorizontalAlignment" Value="Stretch"/>
-        <Setter Property="VerticalAlignment" Value="Top"/>
-        <Setter Property="Margin" Value="5"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Margin" Value="5" />
     </Style>
-
 </ResourceDictionary>

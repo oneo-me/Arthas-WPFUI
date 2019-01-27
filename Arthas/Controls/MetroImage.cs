@@ -1,5 +1,4 @@
 ﻿using Arthas.Utility.Element;
-using Arthas.Utility.Media;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -31,14 +30,11 @@ namespace Arthas.Controls
 
         public MetroImage()
         {
-
         }
 
         public MetroImage(ImageSource image)
         {
             Source = image;
         }
-
- 
     }
 }
