@@ -1,14 +1,15 @@
-﻿<Metro:MetroWindow x:Class="Arthas.Demo.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Arthas.Demo"
-        xmlns:Metro="clr-namespace:Arthas.Controls.Metro;assembly=Arthas"
-        mc:Ignorable="d"
-        Title="{Binding Title}" d:DesignWidth="1600" d:DesignHeight="1200" MinWidth="1" MinHeight="1" BorderThickness="1" WindowStyle="None">
+﻿<Metro:MetroWindow
+    x:Class="Arthas.Demo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Arthas.Demo"
+    xmlns:Metro="https://github.com/1217950746/Arthas-WPFUI"
+    mc:Ignorable="d"
+    Title="{Binding Title}" d:DesignWidth="1600" d:DesignHeight="1200" MinWidth="1" MinHeight="1" BorderThickness="1" WindowStyle="None">
     <Metro:MetroWindow.DataContext>
-        <local:MainWindowVM/>
+        <local:MainWindowVM />
     </Metro:MetroWindow.DataContext>
     <Metro:MetroWindow.Menu>
         <Metro:MetroTitleMenu>
@@ -378,16 +379,6 @@
                         </Metro:MetroTabItem>
                         <Metro:MetroTabItem Header="测试标签" />
                     </Metro:MetroTabControl>
-                </Grid>
-            </Metro:MetroMenuTabItem>
-            <Metro:MetroMenuTabItem Header="内嵌文档浏览器" Icon="Resources/icon.png" IconMove="Resources/iconMove.png">
-                <Grid>
-                    <Metro:MetroWebBrowser x:Name="web1" Grid.Row="0" />
-                </Grid>
-            </Metro:MetroMenuTabItem>
-            <Metro:MetroMenuTabItem Header="正常浏览器" Icon="Resources/icon.png" IconMove="Resources/iconMove.png">
-                <Grid>
-                    <Metro:MetroWebBrowser x:Name="web2" Grid.Row="1" />
                 </Grid>
             </Metro:MetroMenuTabItem>
             <Metro:MetroMenuTabItem Header="瀑布流控件" Icon="Resources/icon.png" IconMove="Resources/iconMove.png">

@@ -88,14 +88,7 @@ namespace Arthas.Demo
             timer.Interval = new TimeSpan(0, 0, 0, 0, 20);
             timer.Start();
 
-            ContentRendered += delegate
-            {
-                // 手动加载指定HTML
-                web1.Document = ResObj.GetString(Assembly.GetExecutingAssembly(), "Resources.about.html");
-
-                // 导航到指定网页
-                web2.Source = new Uri("http://ie.icoa.cn/");
-            };
+    
 
             foreach (FrameworkElement fe in lists.Children)
             {
