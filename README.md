@@ -9,9 +9,9 @@
 同时支持以下两个版本
 
 - .Net 4.6.1
-- .Net Core 3.0 Preview (处于预览版，我也支持尝试一下而已)
+- .Net Core 3.0
 
 ## 食用方法
 
  - Visual Studio 2019 或 VSCode
- - .Net Core 3.0 Preview SDK
+ - .Net Core 3.0 SDK
