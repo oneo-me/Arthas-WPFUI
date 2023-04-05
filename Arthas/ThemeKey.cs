@@ -2,5 +2,12 @@
 
 public enum ThemeKey
 {
-    Primary
+    Primary,
+
+    Background,
+    BorderBrush,
+    Foreground,
+
+    CaptionBackground,
+    CaptionForeground
 }

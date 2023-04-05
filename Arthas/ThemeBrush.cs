@@ -14,13 +14,18 @@ public class ThemeBrushExtension : MarkupExtension
 
     public override object ProvideValue(IServiceProvider serviceProvider)
     {
-        switch (_key)
+        return _key switch
         {
-            case ThemeKey.Primary:
-                return new SolidColorBrush(Color.FromArgb((byte)(2.55 * 100), 84, 135, 238));
+            ThemeKey.Primary => new SolidColorBrush(Color.FromRgb(92, 90, 238)),
 
-            default:
-                throw new ArgumentOutOfRangeException();
-        }
+            ThemeKey.Background  => new(Color.FromRgb(247, 247, 247)),
+            ThemeKey.BorderBrush => new(Color.FromArgb((byte)(255 * 0.1), 38, 38, 38)),
+            ThemeKey.Foreground  => new(Color.FromRgb(38, 38, 38)),
+
+            ThemeKey.CaptionBackground => new(Color.FromRgb(92, 90, 238)),
+            ThemeKey.CaptionForeground => new(Color.FromRgb(255, 255, 255)),
+
+            _ => throw new ArgumentOutOfRangeException()
+        };
     }
 }

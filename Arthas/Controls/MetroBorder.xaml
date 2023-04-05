@@ -1,0 +1,9 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:metro="clr-namespace:Arthas.Controls"
+    xmlns:arthas="clr-namespace:Arthas">
+    <Style TargetType="{x:Type metro:MetroBorder}">
+        <Setter Property="BorderBrush" Value="{arthas:ThemeBrush BorderBrush}" />
+    </Style>
+</ResourceDictionary>

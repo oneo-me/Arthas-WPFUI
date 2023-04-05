@@ -10,15 +10,13 @@
         <ResourceDictionary Source="/Arthas;component/Controls/MetroTextBlock.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroTabItem.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroSwitch.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroGroupBox.xaml" />
+        <ResourceDictionary Source="/Arthas;component/Controls/MetroGroup.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroTitleMenu.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroTitleMenuItem.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroMenuItem.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroMenuSeparator.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroContextMenu.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroScrollViewer.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroComboBox.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroComboBoxItem.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroProgressBar.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroExpander.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroCanvasGrid.xaml" />

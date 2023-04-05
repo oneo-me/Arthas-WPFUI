@@ -37,10 +37,10 @@
         </Setter>
     </Style>
     <Style TargetType="{x:Type metro:MetroWindow}">
-        <Setter Property="Background" Value="#FFF3F3F3" />
-        <Setter Property="Foreground" Value="#FF000000" />
-        <Setter Property="CaptionBackground" Value="{arthas:ThemeBrush Primary}" />
-        <Setter Property="CaptionForeground" Value="#ffffff" />
+        <Setter Property="Background" Value="{arthas:ThemeBrush Background}" />
+        <Setter Property="Foreground" Value="{arthas:ThemeBrush Foreground}" />
+        <Setter Property="CaptionBackground" Value="{arthas:ThemeBrush CaptionBackground}" />
+        <Setter Property="CaptionForeground" Value="{arthas:ThemeBrush CaptionForeground}" />
         <Setter Property="FontSize" Value="12" />
         <Setter Property="UseLayoutRounding" Value="True" />
         <Setter Property="SnapsToDevicePixels" Value="True" />

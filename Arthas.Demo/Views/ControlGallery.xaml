@@ -6,125 +6,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     mc:Ignorable="d" d:DataContext="{d:DesignInstance local:ControlGallery_Model}">
+    <View.Resources>
+        <Style TargetType="MetroGroup">
+            <Setter Property="Margin" Value="8" />
+        </Style>
+    </View.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition MinWidth="160" Width="Auto" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <MetroScrollViewer>
-            <Border BorderBrush="#19000000" BorderThickness="0,0,1,0">
-                <StackPanel x:Name="lists">
-                    <MetroExpander Header="Button" Hint="提示" Icon="../Resources/tabIcon.png" />
-                    <MetroExpander Header="Button" Hint="1 / 100" />
-                    <MetroExpander Header="Header" Hint="可以修改" HintBackground="#FFF15151">
-                        <StackPanel>
-                            <MetroExpander Header="Button" Icon="../Resources/tabIcon.png" />
-                            <MetroExpander Header="Button" Icon="../Resources/tabIcon.png" />
-                            <MetroExpander Header="Button" Icon="../Resources/tabIcon.png" />
-                            <MetroExpander Header="Button" />
-                            <MetroExpander Header="Button" />
-                        </StackPanel>
-                    </MetroExpander>
-                    <MetroExpander Header="Header" IsExpanded="True">
-                        <StackPanel>
-                            <MetroExpander Header="子内容长标题测试" Icon="../Resources/tabIcon.png" Hint="1 / 100" />
-                            <MetroExpander Header="Button" />
-                            <MetroExpander Header="Button" />
-                            <MetroExpander Header="Button" />
-                        </StackPanel>
-                    </MetroExpander>
-                    <MetroExpander Header="Button" />
-                    <MetroExpander Header="Button" />
-                </StackPanel>
-            </Border>
-        </MetroScrollViewer>
+        <ViewModelHost Grid.Column="0" ViewModelType="local:ExpanderDemo_Model" />
         <MetroScrollViewer Grid.Column="1">
-            <MetroWaterfallFlow x:Name="waterfallFlow" Size="300">
+            <MetroWaterfallFlow Size="300" Margin="8">
                 <Grid>
-                    <MetroGroupBox Header="组合框">
-                        <Grid>
-                            <StackPanel>
-                                <MetroComboBox IsEnabled="False" Text="MetroComboBox" Icon="../Resources/editIcon.png" Title="默认标题">
-                                    <MetroComboBoxItem Content="MetroComboBoxItem0" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem1" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem2" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem3" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem4" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem5" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem6" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem7" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem8" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem9" />
-                                </MetroComboBox>
-                                <MetroComboBox Text="MetroComboBox" />
-                                <MetroComboBox Text="MetroComboBox" Title="默认标题">
-                                    <MetroComboBoxItem Content="MetroComboBoxItem0" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem1" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem2" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem3" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem4" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem5" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem6" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem7" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem8" />
-                                    <MetroComboBoxItem Content="MetroComboBoxItem9" />
-                                </MetroComboBox>
-                            </StackPanel>
-                        </Grid>
-                    </MetroGroupBox>
-                </Grid>
-                <Grid>
-                    <MetroGroupBox Header="多选框">
-                        <Grid>
-                            <StackPanel>
-                                <StackPanel Orientation="Horizontal">
-                                    <CheckBox Content="CheckBox" Margin="5" IsEnabled="False" />
-                                    <CheckBox Content="CheckBox" Margin="5" />
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal">
-                                    <CheckBox Content="CheckBox" Margin="5" IsEnabled="False" IsChecked="True" />
-                                    <CheckBox Content="CheckBox" Margin="5" IsChecked="True" />
-                                </StackPanel>
-                            </StackPanel>
-                        </Grid>
-                    </MetroGroupBox>
-                </Grid>
-                <Grid>
-                    <MetroGroupBox Header="字体选择器">
-                        <Grid>
-                            <StackPanel />
-                        </Grid>
-                    </MetroGroupBox>
-                </Grid>
-                <Grid>
-                    <MetroGroupBox Header="等待">
-                        <Grid>
-                            <StackPanel Background="#00000000">
-                                <MetroProgressBar Title="MetroProgressBar 等待禁用" Margin="60,5,5,5" ProgressBarState="Wait" IsEnabled="False" />
-                                <MetroProgressBar x:Name="vis" Title="MetroProgressBar 等待" Margin="5" ProgressBarState="Wait" />
-                                <MetroProgressBar Title="MetroProgressBar 等待调整大小" Margin="5,5,60,5" ProgressBarState="Wait" ProgressBarHeight="30" CornerRadius="15" />
-                            </StackPanel>
-                        </Grid>
-                    </MetroGroupBox>
-                </Grid>
-                <Grid>
-                    <MetroGroupBox Header="单选框">
-                        <Grid>
-                            <StackPanel>
-                                <StackPanel Orientation="Horizontal">
-                                    <RadioButton Content="CheckBox" Margin="5" IsEnabled="False" />
-                                    <RadioButton Content="CheckBox" Margin="5" />
-                                </StackPanel>
-                                <StackPanel Orientation="Horizontal">
-                                    <RadioButton Content="CheckBox" Margin="5" IsEnabled="False" IsChecked="True" />
-                                    <RadioButton Content="CheckBox" Margin="5" IsChecked="True" />
-                                </StackPanel>
-                            </StackPanel>
-                        </Grid>
-                    </MetroGroupBox>
-                </Grid>
-                <Grid>
-                    <MetroGroupBox Header="进度条">
+                    <MetroGroup Header="进度条">
                         <Grid>
                             <StackPanel Background="#00000000">
                                 <MetroProgressBar Margin="5" Value="15" ProgressBarHeight="30" CornerRadius="0" ProgressBarState="None" IsEnabled="False" />
@@ -133,61 +29,20 @@
                                 <MetroProgressBar Title="MetroProgressBar 错误" Margin="5" Value="40" ProgressBarState="Error" />
                             </StackPanel>
                         </Grid>
-                    </MetroGroupBox>
+                    </MetroGroup>
                 </Grid>
                 <Grid>
-                    <MetroGroupBox Header="树形框">
-                        <Grid>
-                            <StackPanel>
-                                <TreeView IsEnabled="False" Margin="5">
-                                    <TreeViewItem Header="TreeViewItem" />
-                                    <TreeViewItem Header="TreeViewItem">
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                    </TreeViewItem>
-                                    <TreeViewItem Header="TreeViewItem" />
-                                </TreeView>
-                                <TreeView IsEnabled="False" Margin="5">
-                                    <TreeViewItem Header="TreeViewItem" />
-                                    <TreeViewItem Header="TreeViewItem" IsExpanded="True">
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                    </TreeViewItem>
-                                    <TreeViewItem Header="TreeViewItem" />
-                                </TreeView>
-                                <TreeView x:Name="treeView" Margin="5">
-                                    <TreeViewItem Header="TreeViewItem" />
-                                    <TreeViewItem Header="TreeViewItem">
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                        <TreeViewItem Header="TreeViewItem" />
-                                    </TreeViewItem>
-                                    <TreeViewItem Header="TreeViewItem" />
-                                </TreeView>
-                            </StackPanel>
-                        </Grid>
-                    </MetroGroupBox>
-                </Grid>
-                <Grid>
-                    <MetroGroupBox Header="画布背景">
+                    <MetroGroup Header="画布背景">
                         <Grid>
                             <StackPanel>
                                 <MetroCanvasGrid Height="100" Margin="5" />
                                 <MetroCanvasGrid Height="100" Margin="5" Background="Red" GridOpacity="0.5" IsApplyTheme="False" Viewport="0 0 20 20" CornerRadius="10" />
                             </StackPanel>
                         </Grid>
-                    </MetroGroupBox>
+                    </MetroGroup>
                 </Grid>
                 <Grid>
-                    <MetroGroupBox Header="开关">
+                    <MetroGroup Header="开关">
                         <StackPanel>
                             <MetroSwitch Content="关闭禁用" Margin="10" IsEnabled="False" />
                             <MetroSwitch Content="打开禁用" IsChecked="true" Margin="10" IsEnabled="False" />
@@ -195,10 +50,10 @@
                             <MetroSwitch x:Name="ts" Content="特殊动画" Margin="10" CornerRadius="100" />
                             <MetroSwitch Content="方块模式" Margin="10" CornerRadius="2" BorderCornerRadius="3" />
                         </StackPanel>
-                    </MetroGroupBox>
+                    </MetroGroup>
                 </Grid>
                 <Grid>
-                    <MetroGroupBox Header="编辑框">
+                    <MetroGroup Header="编辑框">
                         <StackPanel>
                             <MetroTextBox x:Name="password" InputHint="PassWord Input Box!" IsPassWordBox="True" ButtonTitle="确定" PopupHint="请输入密码" />
                             <MetroTextBox InputHint="InputHint..." PopupHint="This is TextBox!" Margin="0,10,0,0" />
@@ -210,10 +65,10 @@
                             <MetroTextBox Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="../Resources/editIcon.png" IsEnabled="False" />
                             <MetroTextBox Title="Default Title" InputHint="InputHint..." Text="已经输入内容且禁用" ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="../Resources/editIcon.png" IsEnabled="False" />
                         </StackPanel>
-                    </MetroGroupBox>
+                    </MetroGroup>
                 </Grid>
                 <Grid>
-                    <MetroGroupBox Header="按钮">
+                    <MetroGroup Header="按钮">
                         <StackPanel HorizontalAlignment="Center">
                             <StackPanel Orientation="Horizontal">
                                 <MetroButton MetroButtonState="None" Content="默认颜色" IsEnabled="False" Margin="10" />
@@ -228,7 +83,7 @@
                                 <MetroButton MetroButtonState="Green" Content="正确颜色" Command="{Binding CmdSampleWithParam}" CommandParameter="Good" IsEnabled="{Binding BtnEnabled}" Margin="10" />
                             </StackPanel>
                         </StackPanel>
-                    </MetroGroupBox>
+                    </MetroGroup>
                 </Grid>
             </MetroWaterfallFlow>
         </MetroScrollViewer>
