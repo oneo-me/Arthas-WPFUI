@@ -13,12 +13,10 @@ public class MetroTextBox : TextBox
     public static readonly DependencyProperty TitleForegroundProperty = ElementBase.Property<MetroTextBox, Brush>(nameof(TitleForegroundProperty));
     public static readonly DependencyProperty MouseMoveBackgroundProperty = ElementBase.Property<MetroTextBox, Brush>(nameof(MouseMoveBackgroundProperty));
     public static readonly DependencyProperty InputHintProperty = ElementBase.Property<MetroTextBox, string>(nameof(InputHintProperty), "");
-    public static readonly DependencyProperty PopupHintProperty = ElementBase.Property<MetroTextBox, string>(nameof(PopupHintProperty), "");
     public static readonly DependencyProperty ButtonTitleProperty = ElementBase.Property<MetroTextBox, string>(nameof(ButtonTitleProperty), "");
     public static readonly DependencyProperty IconProperty = ElementBase.Property<MetroTextBox, ImageSource>(nameof(IconProperty), null);
     public static readonly DependencyProperty StateProperty = ElementBase.Property<MetroTextBox, string>(nameof(StateProperty), "");
     public static readonly DependencyProperty MultipleLineProperty = ElementBase.Property<MetroTextBox, bool>(nameof(MultipleLineProperty), false);
-    public static readonly DependencyProperty IsPassWordBoxProperty = ElementBase.Property<MetroTextBox, bool>(nameof(IsPassWordBoxProperty), false);
     public static readonly DependencyProperty CornerRadiusProperty = ElementBase.Property<MetroTextBox, CornerRadius>(nameof(CornerRadiusProperty));
 
     public static RoutedUICommand ButtonClickCommand = ElementBase.Command<MetroTextBox>(nameof(ButtonClickCommand));
@@ -53,12 +51,6 @@ public class MetroTextBox : TextBox
         set => SetValue(InputHintProperty, value);
     }
 
-    public string PopupHint
-    {
-        get => (string)GetValue(PopupHintProperty);
-        set => SetValue(PopupHintProperty, value);
-    }
-
     public string ButtonTitle
     {
         get => (string)GetValue(ButtonTitleProperty);
@@ -81,12 +73,6 @@ public class MetroTextBox : TextBox
     {
         get => (bool)GetValue(MultipleLineProperty);
         set => SetValue(MultipleLineProperty, value);
-    }
-
-    public bool IsPassWordBox
-    {
-        get => (bool)GetValue(IsPassWordBoxProperty);
-        set => SetValue(IsPassWordBoxProperty, value);
     }
 
     public CornerRadius CornerRadius

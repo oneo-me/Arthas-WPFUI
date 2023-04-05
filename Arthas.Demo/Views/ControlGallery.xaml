@@ -55,15 +55,14 @@
                 <Grid>
                     <MetroGroup Header="编辑框">
                         <StackPanel>
-                            <MetroTextBox x:Name="password" InputHint="PassWord Input Box!" IsPassWordBox="True" ButtonTitle="确定" PopupHint="请输入密码" />
-                            <MetroTextBox InputHint="InputHint..." PopupHint="This is TextBox!" Margin="0,10,0,0" />
+                            <MetroTextBox InputHint="InputHint..." Margin="0,10,0,0" />
                             <MetroTextBox Margin="0,10,0,0" />
-                            <MetroTextBox Title="Default Title" InputHint="InputHint..." PopupHint="This is TextBox!" Margin="0,10,0,0" />
-                            <MetroTextBox x:Name="check" Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="../Resources/editIcon.png" />
-                            <MetroTextBox x:Name="check1" Text="0123456789" Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="../Resources/editIcon.png" />
-                            <MetroTextBox Title="Default Title" InputHint="InputHint..." Text="This is Content!" ButtonTitle="Button" PopupHint="这是一个多行编辑框!" Margin="0,10,0,0" Icon="../Resources/editIcon.png" MultipleLine="True" />
-                            <MetroTextBox Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="../Resources/editIcon.png" IsEnabled="False" />
-                            <MetroTextBox Title="Default Title" InputHint="InputHint..." Text="已经输入内容且禁用" ButtonTitle="Button" PopupHint="Length is more than 10!" Margin="0,10,0,0" Icon="../Resources/editIcon.png" IsEnabled="False" />
+                            <MetroTextBox Title="Default Title" InputHint="InputHint..." Margin="0,10,0,0" />
+                            <MetroTextBox x:Name="check" Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" />
+                            <MetroTextBox x:Name="check1" Text="0123456789" Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" />
+                            <MetroTextBox Title="Default Title" InputHint="InputHint..." Text="This is Content!" ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" MultipleLine="True" />
+                            <MetroTextBox Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" IsEnabled="False" />
+                            <MetroTextBox Title="Default Title" InputHint="InputHint..." Text="已经输入内容且禁用" ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" IsEnabled="False" />
                         </StackPanel>
                     </MetroGroup>
                 </Grid>

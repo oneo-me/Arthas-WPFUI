@@ -17,7 +17,7 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition />
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Text="{TemplateBinding Header}" Opacity="0.6" Margin="8" />
+                        <TextBlock Grid.Row="0" Text="{TemplateBinding Header}" Margin="8" />
                         <Border Grid.Row="1" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0 1 0 0">
                             <ContentPresenter Margin="{TemplateBinding Padding}" />
                         </Border>
