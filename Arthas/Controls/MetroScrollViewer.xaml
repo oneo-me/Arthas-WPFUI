@@ -1,8 +1,9 @@
 ﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:metro="clr-namespace:Arthas.Controls">
-    <Style x:Key="repeatButtonStyle" TargetType="{x:Type RepeatButton}">
+    xmlns:metro="clr-namespace:Arthas.Controls"
+    xmlns:arthas="clr-namespace:Arthas">
+    <Style x:Key="RepeatButtonStyle" TargetType="{x:Type RepeatButton}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="Template">
             <Setter.Value>
@@ -12,9 +13,8 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="thumbStyle" TargetType="{x:Type Thumb}">
+    <Style x:Key="ThumbStyle1" TargetType="{x:Type Thumb}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Thumb}">
@@ -53,9 +53,8 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="thumbStyle1" TargetType="{x:Type Thumb}">
+    <Style x:Key="ThumbStyle2" TargetType="{x:Type Thumb}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Thumb}">
@@ -94,23 +93,22 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="scrollBarStyle" TargetType="{x:Type ScrollBar}">
+    <Style x:Key="VerticalScrollBarStyle" TargetType="{x:Type ScrollBar}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="ContextMenu" Value="{x:Null}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ScrollBar}">
                     <Grid SnapsToDevicePixels="true">
-                        <Track x:Name="PART_Track" IsDirectionReversed="true" IsEnabled="{TemplateBinding IsMouseOver}" Grid.Row="1">
+                        <Track x:Name="PART_Track" IsDirectionReversed="true" IsEnabled="{TemplateBinding IsMouseOver}">
                             <Track.DecreaseRepeatButton>
-                                <RepeatButton Command="{x:Static ScrollBar.PageUpCommand}" Style="{StaticResource repeatButtonStyle}" />
+                                <RepeatButton Command="{x:Static ScrollBar.PageUpCommand}" Style="{StaticResource RepeatButtonStyle}" />
                             </Track.DecreaseRepeatButton>
                             <Track.IncreaseRepeatButton>
-                                <RepeatButton Command="{x:Static ScrollBar.PageDownCommand}" Style="{StaticResource repeatButtonStyle}" />
+                                <RepeatButton Command="{x:Static ScrollBar.PageDownCommand}" Style="{StaticResource RepeatButtonStyle}" />
                             </Track.IncreaseRepeatButton>
                             <Track.Thumb>
-                                <Thumb Style="{StaticResource thumbStyle}" BorderBrush="{TemplateBinding BorderBrush}" />
+                                <Thumb Style="{StaticResource ThumbStyle1}" BorderBrush="{TemplateBinding BorderBrush}" />
                             </Track.Thumb>
                         </Track>
                     </Grid>
@@ -118,23 +116,22 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="scrollBarStyle1" TargetType="{x:Type ScrollBar}">
+    <Style x:Key="HorizontalScrollBarStyle" TargetType="{x:Type ScrollBar}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="ContextMenu" Value="{x:Null}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ScrollBar}">
                     <Grid SnapsToDevicePixels="true">
-                        <Track x:Name="PART_Track" IsDirectionReversed="true" IsEnabled="{TemplateBinding IsMouseOver}" Grid.Row="1">
+                        <Track x:Name="PART_Track" IsDirectionReversed="true" IsEnabled="{TemplateBinding IsMouseOver}">
                             <Track.DecreaseRepeatButton>
-                                <RepeatButton Command="{x:Static ScrollBar.PageLeftCommand}" Style="{StaticResource repeatButtonStyle}" />
+                                <RepeatButton Command="{x:Static ScrollBar.PageLeftCommand}" Style="{StaticResource RepeatButtonStyle}" />
                             </Track.DecreaseRepeatButton>
                             <Track.IncreaseRepeatButton>
-                                <RepeatButton Command="{x:Static ScrollBar.PageRightCommand}" Style="{StaticResource repeatButtonStyle}" />
+                                <RepeatButton Command="{x:Static ScrollBar.PageRightCommand}" Style="{StaticResource RepeatButtonStyle}" />
                             </Track.IncreaseRepeatButton>
                             <Track.Thumb>
-                                <Thumb Style="{StaticResource thumbStyle1}" BorderBrush="{TemplateBinding BorderBrush}" />
+                                <Thumb Style="{StaticResource ThumbStyle2}" BorderBrush="{TemplateBinding BorderBrush}" />
                             </Track.Thumb>
                         </Track>
                     </Grid>
@@ -144,27 +141,32 @@
     </Style>
     <Style TargetType="{x:Type metro:MetroScrollViewer}">
         <Setter Property="Background" Value="#00000000" />
-        <Setter Property="BorderBrush" Value="#000000" />
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-        <Setter Property="Padding" Value="0" />
+        <Setter Property="BorderBrush" Value="{arthas:ThemeBrush BorderBrush}" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="VerticalContentAlignment" Value="Top" />
         <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
-        <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
+        <Setter Property="HorizontalScrollBarVisibility" Value="Disabled" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type metro:MetroScrollViewer}">
-                    <Grid Background="{TemplateBinding Background}">
-                        <Grid.RowDefinitions>
-                            <RowDefinition />
-                            <RowDefinition x:Name="height" Height="0" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition />
-                            <ColumnDefinition x:Name="width" Width="0" />
-                        </Grid.ColumnDefinitions>
-                        <ScrollContentPresenter Content="{TemplateBinding Content}" Margin="{TemplateBinding Padding}" />
-                        <ScrollBar x:Name="PART_VerticalScrollBar" MinWidth="10" MaxWidth="10" BorderBrush="{TemplateBinding BorderBrush}" AutomationProperties.AutomationId="VerticalScrollBar" Cursor="Arrow" Grid.Column="1" Grid.Row="0" Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" Maximum="{TemplateBinding ScrollableHeight}" Minimum="0" Value="{Binding VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportHeight}" Style="{StaticResource scrollBarStyle}" HorizontalAlignment="Right" />
-                        <ScrollBar x:Name="PART_HorizontalScrollBar" MinHeight="10" MaxHeight="10" BorderBrush="{TemplateBinding BorderBrush}" AutomationProperties.AutomationId="HorizontalScrollBar" Grid.Column="0" Grid.Row="1" Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" Maximum="{TemplateBinding ScrollableWidth}" Minimum="0" Value="{Binding HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportWidth}" Style="{StaticResource scrollBarStyle1}" FlowDirection="RightToLeft" Orientation="Horizontal" VerticalAlignment="Bottom" />
-                    </Grid>
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <ScrollContentPresenter Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="2" Content="{TemplateBinding Content}" Margin="{TemplateBinding Padding}"
+                                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                            <ScrollBar x:Name="PART_VerticalScrollBar" BorderBrush="{TemplateBinding BorderBrush}" AutomationProperties.AutomationId="VerticalScrollBar" Cursor="Arrow"
+                                       Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" Maximum="{TemplateBinding ScrollableHeight}" Minimum="0" Value="{Binding VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportHeight}" Style="{StaticResource VerticalScrollBarStyle}" />
+                            <ScrollBar x:Name="PART_HorizontalScrollBar" BorderBrush="{TemplateBinding BorderBrush}" AutomationProperties.AutomationId="HorizontalScrollBar"
+                                       Grid.Column="0" Grid.Row="1" Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" Maximum="{TemplateBinding ScrollableWidth}" Minimum="0" Value="{Binding HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportWidth}" Style="{StaticResource HorizontalScrollBarStyle}" FlowDirection="RightToLeft" Orientation="Horizontal" />
+                        </Grid>
+                    </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

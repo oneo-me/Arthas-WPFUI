@@ -4,7 +4,6 @@
     xmlns:metro="clr-namespace:Arthas.Controls"
     xmlns:arthas="clr-namespace:Arthas">
     <Style TargetType="{x:Type metro:MetroContextMenu}">
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="VerticalOffset" Value="-20" />
         <Setter Property="HorizontalOffset" Value="-20" />

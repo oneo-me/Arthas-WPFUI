@@ -4,7 +4,6 @@
     xmlns:metro="clr-namespace:Arthas.Controls">
     <!--
     <Style TargetType="{x:Type metro:MetroTextBlock}">
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Foreground" Value="#FF000000" />
         <Setter Property="Template">
@@ -32,7 +31,6 @@
     </Style>
     -->
     <Style TargetType="{x:Type metro:MetroTextBlock}">
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Foreground" Value="#FF000000" />
     </Style>

@@ -4,7 +4,6 @@
     xmlns:metro="clr-namespace:Arthas.Controls"
     xmlns:arthas="clr-namespace:Arthas">
     <Style TargetType="{x:Type metro:MetroButton}">
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Foreground" Value="#FFFFFFFF" />
         <Setter Property="Background" Value="{arthas:ThemeBrush Primary}" />

@@ -6,7 +6,6 @@
     <converter:DoubleToThickness x:Key="DoubleToThickness" />
     <converter:DoubleToCornerRadius x:Key="DoubleToCornerRadius" />
     <Style TargetType="{x:Type metro:MetroFocusButton}">
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Background" Value="#00000000" />
         <Setter Property="Padding" Value="0" />

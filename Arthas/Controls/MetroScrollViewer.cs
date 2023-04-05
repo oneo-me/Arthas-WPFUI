@@ -1,5 +1,5 @@
-﻿using System.Windows.Controls;
-using Arthas.Utility.Element;
+﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace Arthas.Controls;
 
@@ -7,6 +7,6 @@ public class MetroScrollViewer : ScrollViewer
 {
     static MetroScrollViewer()
     {
-        ElementBase.DefaultStyle<MetroScrollViewer>(DefaultStyleKeyProperty);
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroScrollViewer), new FrameworkPropertyMetadata(typeof(MetroScrollViewer)));
     }
 }

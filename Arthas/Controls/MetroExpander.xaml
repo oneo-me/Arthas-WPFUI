@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:metro="clr-namespace:Arthas.Controls">
     <Style TargetType="{x:Type metro:MetroExpander}">
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="MinWidth" Value="180" />
         <Setter Property="CanHide" Value="True" />

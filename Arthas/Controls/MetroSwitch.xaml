@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:metro="clr-namespace:Arthas.Controls">
     <Style TargetType="{x:Type metro:MetroSwitch}">
-        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Height" Value="24" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
