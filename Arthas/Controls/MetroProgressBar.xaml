@@ -5,7 +5,6 @@
     xmlns:converter="clr-namespace:Arthas.Converter">
     <converter:CornerRadiusToDouble x:Key="CornerRadiusToDouble" />
     <Style TargetType="{x:Type metro:MetroProgressBar}">
-        <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="ProgressBarHeight" Value="15" />
         <Setter Property="CornerRadius" Value="7.5" />
         <Setter Property="ProgressBarState" Value="None" />

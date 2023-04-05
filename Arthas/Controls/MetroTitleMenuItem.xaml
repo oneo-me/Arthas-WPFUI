@@ -5,7 +5,6 @@
     xmlns:metro="clr-namespace:Arthas.Controls"
     xmlns:arthas="clr-namespace:Arthas">
     <Style TargetType="{x:Type metro:MetroTitleMenuItem}">
-        <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Height" Value="32" />
         <Setter Property="Background" Value="{arthas:ThemeBrush Primary}" />
         <Setter Property="Template">

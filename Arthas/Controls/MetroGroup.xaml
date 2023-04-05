@@ -5,7 +5,6 @@
     xmlns:arthas="clr-namespace:Arthas">
     <Style TargetType="{x:Type metro:MetroGroup}">
         <Setter Property="BorderBrush" Value="{arthas:ThemeBrush BorderBrush}" />
-        <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Padding" Value="8" />
         <Setter Property="Template">
             <Setter.Value>

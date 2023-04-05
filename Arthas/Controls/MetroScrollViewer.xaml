@@ -4,7 +4,6 @@
     xmlns:metro="clr-namespace:Arthas.Controls"
     xmlns:arthas="clr-namespace:Arthas">
     <Style x:Key="RepeatButtonStyle" TargetType="{x:Type RepeatButton}">
-        <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RepeatButton}">
@@ -14,7 +13,6 @@
         </Setter>
     </Style>
     <Style x:Key="ThumbStyle1" TargetType="{x:Type Thumb}">
-        <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Thumb}">
@@ -54,7 +52,6 @@
         </Setter>
     </Style>
     <Style x:Key="ThumbStyle2" TargetType="{x:Type Thumb}">
-        <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Thumb}">
@@ -94,7 +91,6 @@
         </Setter>
     </Style>
     <Style x:Key="VerticalScrollBarStyle" TargetType="{x:Type ScrollBar}">
-        <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="ContextMenu" Value="{x:Null}" />
         <Setter Property="Template">
             <Setter.Value>
@@ -117,7 +113,6 @@
         </Setter>
     </Style>
     <Style x:Key="HorizontalScrollBarStyle" TargetType="{x:Type ScrollBar}">
-        <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="ContextMenu" Value="{x:Null}" />
         <Setter Property="Template">
             <Setter.Value>

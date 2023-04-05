@@ -4,7 +4,6 @@
     xmlns:metro="clr-namespace:Arthas.Controls">
     <Style TargetType="{x:Type metro:MetroMenuSeparator}">
         <Setter Property="Focusable" Value="false" />
-        <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Background" Value="#ffffff" />
         <Setter Property="Opacity" Value="0.3" />
         <Setter Property="Margin" Value="-30,2,0,2" />

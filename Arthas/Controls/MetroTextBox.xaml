@@ -6,7 +6,6 @@
     xmlns:arthas="clr-namespace:Arthas">
     <converter:StringToVisibility x:Key="StringToVisibility" />
     <Style x:Key="buttonStyle" TargetType="{x:Type Button}">
-        <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -34,7 +33,6 @@
         </Setter>
     </Style>
     <Style TargetType="{x:Type metro:MetroTextBox}">
-        <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="AcceptsReturn" Value="False" />
         <Setter Property="TextWrapping" Value="NoWrap" />
         <Setter Property="Background" Value="#FFFFFFFF" />
