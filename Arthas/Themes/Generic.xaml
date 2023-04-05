@@ -11,8 +11,8 @@
         <ResourceDictionary Source="/Arthas;component/Controls/MetroTabItem.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroSwitch.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroGroup.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroTitleMenu.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroTitleMenuItem.xaml" />
+        <ResourceDictionary Source="/Arthas;component/Controls/MetroCaptionMenu.xaml" />
+        <ResourceDictionary Source="/Arthas;component/Controls/MetroCaptionMenuItem.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroMenuItem.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroMenuSeparator.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroContextMenu.xaml" />

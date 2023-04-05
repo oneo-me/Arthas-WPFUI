@@ -1,0 +1,39 @@
+﻿<View
+    x:Class="Arthas.Demo.Views.Caption"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Arthas.Demo.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    mc:Ignorable="d" d:DataContext="{d:DesignInstance local:Caption_Model}">
+    <MetroCaptionMenu>
+        <MetroCaptionMenuItem Header="多级菜单测试">
+            <MetroMenuItem Header="二级菜单" />
+            <MetroMenuItem Header="二级菜单" IsEnabled="False" />
+            <MetroMenuItem Header="二级菜单" />
+            <MetroMenuSeparator />
+            <MetroMenuItem Header="二级菜单" />
+            <MetroMenuItem Header="二级菜单" />
+            <MetroMenuItem Header="内部是三级菜单">
+                <MetroMenuItem Header="三级菜单" />
+                <MetroMenuItem Header="三级菜单" IsEnabled="False" />
+                <MetroMenuItem Header="三级菜单" />
+                <MetroMenuSeparator />
+                <MetroMenuItem Header="三级菜单" />
+                <MetroMenuItem Header="内部是三级菜单">
+                    <MetroMenuItem Header="三级菜单" />
+                    <MetroMenuItem Header="三级菜单" IsEnabled="False" />
+                    <MetroMenuItem Header="三级菜单" />
+                    <MetroMenuSeparator />
+                    <MetroMenuItem Header="三级菜单" />
+                    <MetroMenuItem Header="三级菜单" />
+                </MetroMenuItem>
+            </MetroMenuItem>
+            <MetroMenuItem Header="二级菜单" />
+        </MetroCaptionMenuItem>
+        <MetroCaptionMenuItem Header="测试" IsEnabled="False" />
+        <MetroCaptionMenuItem Header="测试" IsEnabled="False" />
+        <MetroCaptionMenuItem Header="文件" />
+        <MetroCaptionMenuItem Header="关于" />
+    </MetroCaptionMenu>
+</View>

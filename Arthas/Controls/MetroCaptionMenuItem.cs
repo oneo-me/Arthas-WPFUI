@@ -3,11 +3,11 @@ using System.Windows.Controls;
 
 namespace Arthas.Controls;
 
-public class MetroMenuItem : MenuItem
+public class MetroCaptionMenuItem : MenuItem
 {
-    static MetroMenuItem()
+    static MetroCaptionMenuItem()
     {
-        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroMenuItem), new FrameworkPropertyMetadata(typeof(MetroMenuItem)));
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroCaptionMenuItem), new FrameworkPropertyMetadata(typeof(MetroCaptionMenuItem)));
     }
 
     protected override DependencyObject GetContainerForItemOverride()
