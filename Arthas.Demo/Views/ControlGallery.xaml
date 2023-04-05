@@ -41,16 +41,6 @@
         <MetroScrollViewer Grid.Column="1">
             <MetroWaterfallFlow x:Name="waterfallFlow" Size="300">
                 <Grid>
-                    <MetroGroupBox Header="主题颜色（MetroColorPicker 实现）">
-                        <Grid>
-                            <WrapPanel Orientation="Horizontal">
-                                <MetroColorPicker x:Name="color1" Width="50" Height="50" Background="#6D819A" DefaultColor="#6D819A" Padding="5" />
-                                <MetroColorPicker x:Name="color2" Width="50" Height="50" Background="#6D819A" DefaultColor="#6D819A" Padding="5" IsEnabled="False" />
-                            </WrapPanel>
-                        </Grid>
-                    </MetroGroupBox>
-                </Grid>
-                <Grid>
                     <MetroGroupBox Header="组合框">
                         <Grid>
                             <StackPanel>
