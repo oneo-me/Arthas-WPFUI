@@ -1,26 +1,37 @@
-﻿using Arthas.Utility.Element;
+﻿using System.Windows;
 using System.Windows.Controls;
+using Arthas.Utility.Element;
 
-namespace Arthas.Controls
+namespace Arthas.Controls;
+
+public class MetroTabControl : TabControl
 {
-    public class MetroTabControl : TabControl
+    void SelectionState()
     {
-        void SelectionState()
-        {
-            ElementBase.GoToState(this, "SelectionStart");
-            ElementBase.GoToState(this, "SelectionEnd");
-        }
+        ElementBase.GoToState(this, "SelectionStart");
+        ElementBase.GoToState(this, "SelectionEnd");
+    }
 
-        public MetroTabControl()
-        {
-            Loaded += delegate { ElementBase.GoToState(this, "SelectionLoaded"); };
-            SelectionChanged += delegate (object sender, SelectionChangedEventArgs e) { if (e.Source is MetroTabControl) { SelectionState(); } };
-            Utility.Refresh(this);
-        }
+    protected override DependencyObject GetContainerForItemOverride()
+    {
+        return new MetroTabItem();
+    }
 
-        static MetroTabControl()
+    public MetroTabControl()
+    {
+        Loaded += delegate
         {
-            ElementBase.DefaultStyle<MetroTabControl>(DefaultStyleKeyProperty);
-        }
+            ElementBase.GoToState(this, "SelectionLoaded");
+        };
+        SelectionChanged += delegate(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.Source is MetroTabControl)
+                SelectionState();
+        };
+    }
+
+    static MetroTabControl()
+    {
+        ElementBase.DefaultStyle<MetroTabControl>(DefaultStyleKeyProperty);
     }
 }

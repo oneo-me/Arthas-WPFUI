@@ -1,13 +1,12 @@
-﻿using Arthas.Utility.Element;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
+using Arthas.Utility.Element;
 
-namespace Arthas.Controls
+namespace Arthas.Controls;
+
+public class MetroMenuSeparator : Separator
 {
-    public class MetroMenuSeparator : Separator
+    static MetroMenuSeparator()
     {
-        static MetroMenuSeparator()
-        {
-            ElementBase.DefaultStyle<MetroMenuSeparator>(DefaultStyleKeyProperty);
-        }
+        ElementBase.DefaultStyle<MetroMenuSeparator>(DefaultStyleKeyProperty);
     }
 }

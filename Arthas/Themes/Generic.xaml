@@ -1,4 +1,5 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/Arthas;component/Controls/MetroWindow.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroButton.xaml" />
@@ -10,9 +11,6 @@
         <ResourceDictionary Source="/Arthas;component/Controls/MetroTabItem.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroSwitch.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroGroupBox.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroWaterfallFlow.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroMenuTabItem.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroMenuTabControl.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroTitleMenu.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroTitleMenuItem.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroMenuItem.xaml" />
@@ -21,12 +19,8 @@
         <ResourceDictionary Source="/Arthas;component/Controls/MetroScrollViewer.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroComboBox.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroComboBoxItem.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroVisualElement.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroProgressBar.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroRichTextBox.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroImage.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroExpander.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroCanvasGrid.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroPath.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

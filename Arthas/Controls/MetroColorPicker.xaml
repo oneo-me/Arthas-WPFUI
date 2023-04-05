@@ -4,14 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Arthas.Controls"
+             xmlns:arthas="clr-namespace:Arthas"
              mc:Ignorable="d" Style="{DynamicResource UserControlStyle}" x:Name="root" FontSize="12">
     <UserControl.Resources>
         <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Arthas;component/Controls/MetroBase.xaml" />
-            </ResourceDictionary.MergedDictionaries>
             <Style x:Key="UserControlStyle" TargetType="{x:Type UserControl}">
-                <Setter Property="BorderBrush" Value="{StaticResource Brush}" />
+                <Setter Property="BorderBrush" Value="{arthas:ThemeBrush Primary}" />
                 <Setter Property="SnapsToDevicePixels" Value="True" />
                 <Setter Property="Template">
                     <Setter.Value>
@@ -223,12 +221,10 @@
                                 <local:MetroTextBox x:Name="rgbaG" Grid.Column="0" Grid.Row="2" Title="G" TitleMinWidth="30" BorderThickness="0" CornerRadius="2" TitleForeground="#FFFFFF" Margin="0,8,0,0" MaxLength="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
                                 <local:MetroTextBox x:Name="rgbaB" Grid.Column="0" Grid.Row="3" Title="B" TitleMinWidth="30" BorderThickness="0" CornerRadius="2" TitleForeground="#FFFFFF" Margin="0,8,0,0" MaxLength="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
                                 <local:MetroTextBox x:Name="rgbaA" Grid.Column="0" Grid.Row="4" Title="A" TitleMinWidth="30" BorderThickness="0" CornerRadius="2" TitleForeground="#FFFFFF" Margin="0,8,0,0" MaxLength="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-
                                 <local:MetroTextBox x:Name="hsbaH" Grid.Column="1" Grid.Row="1" Title="H" TitleMinWidth="30" BorderThickness="0" CornerRadius="2" TitleForeground="#FFFFFF" Margin="0,8,0,0" MaxLength="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
                                 <local:MetroTextBox x:Name="hsbaS" Grid.Column="1" Grid.Row="2" Title="S" TitleMinWidth="30" BorderThickness="0" CornerRadius="2" TitleForeground="#FFFFFF" Margin="0,8,0,0" MaxLength="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
                                 <local:MetroTextBox x:Name="hsbaB" Grid.Column="1" Grid.Row="3" Title="B" TitleMinWidth="30" BorderThickness="0" CornerRadius="2" TitleForeground="#FFFFFF" Margin="0,8,0,0" MaxLength="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
                                 <local:MetroTextBox x:Name="hsbaA" Grid.Column="1" Grid.Row="4" Title="O" TitleMinWidth="30" BorderThickness="0" CornerRadius="2" TitleForeground="#FFFFFF" Margin="0,8,0,0" MaxLength="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-
                                 <local:MetroTextBox x:Name="hex" Grid.ColumnSpan="2" Grid.Row="5" Title="Hex" ButtonTitle="复制" TitleMinWidth="30" BorderThickness="0" CornerRadius="3" TitleForeground="#FFFFFF" Margin="0,8,0,0" MaxLength="9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
                             </Grid>
                         </Grid>

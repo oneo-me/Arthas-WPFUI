@@ -1,8 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-    <PropertyGroup>
-        <TargetFrameworks>netcoreapp3.0;net461</TargetFrameworks>
-        <LangVersion>latest</LangVersion>
-        <UseWPF>true</UseWPF>
-        <UseWindowsForms>true</UseWindowsForms>
-    </PropertyGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <PackageReference Include="OpenView.WPF" Version="1.0.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Arthas.Shell\Arthas.Shell.csproj" />
+    </ItemGroup>
 </Project>

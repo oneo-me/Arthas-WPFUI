@@ -1,18 +1,12 @@
-﻿using Arthas.Utility.Element;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
+using Arthas.Utility.Element;
 
-namespace Arthas.Controls
+namespace Arthas.Controls;
+
+public class MetroContextMenu : ContextMenu
 {
-    public class MetroContextMenu : ContextMenu
+    static MetroContextMenu()
     {
-        public MetroContextMenu()
-        {
-            Utility.Refresh(this);
-        }
-
-        static MetroContextMenu()
-        {
-            ElementBase.DefaultStyle<MetroContextMenu>(DefaultStyleKeyProperty);
-        }
+        ElementBase.DefaultStyle<MetroContextMenu>(DefaultStyleKeyProperty);
     }
 }

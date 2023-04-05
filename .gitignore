@@ -1,7 +1,6 @@
-# VS
-.VS
+.idea
+.vs
 bin
 obj
-*.csproj.user
-*.pubxml.user
-.idea
+
+*.user

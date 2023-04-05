@@ -1,29 +1,35 @@
-﻿using Arthas.Utility.Element;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
+using Arthas.Utility.Element;
 
-namespace Arthas.Controls
+namespace Arthas.Controls;
+
+public class MetroBorder : Border
 {
-    public class MetroBorder : Border
+    public static readonly DependencyProperty AutoCornerRadiusProperty = ElementBase.Property<MetroBorder, bool>(nameof(AutoCornerRadiusProperty));
+
+    public bool AutoCornerRadius
     {
-        public static readonly DependencyProperty AutoCornerRadiusProperty = ElementBase.Property<MetroBorder, bool>(nameof(AutoCornerRadiusProperty));
-        public bool AutoCornerRadius { get { return (bool)GetValue(AutoCornerRadiusProperty); } set { SetValue(AutoCornerRadiusProperty, value); } }
+        get => (bool)GetValue(AutoCornerRadiusProperty);
+        set => SetValue(AutoCornerRadiusProperty, value);
+    }
 
-        public MetroBorder()
+    public MetroBorder()
+    {
+        Loaded += delegate
         {
-            Loaded += delegate { SizeChang(); };
-            SizeChanged += delegate { SizeChang(); };
-        }
+            SizeChang();
+        };
+        SizeChanged += delegate
+        {
+            SizeChang();
+        };
+    }
 
-        void SizeChang()
-        {
-            if (AutoCornerRadius)
-            {
-                if (IsLoaded)
-                {
-                    CornerRadius = new CornerRadius(ActualWidth >= ActualHeight ? ActualHeight / 2 : ActualWidth / 2);
-                }
-            }
-        }
+    void SizeChang()
+    {
+        if (AutoCornerRadius)
+            if (IsLoaded)
+                CornerRadius = new(ActualWidth >= ActualHeight ? ActualHeight / 2 : ActualWidth / 2);
     }
 }

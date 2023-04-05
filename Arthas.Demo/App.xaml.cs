@@ -1,8 +1,17 @@
 ﻿using System.Windows;
+using Arthas.Demo.Views;
 
-namespace Arthas.Demo
+namespace Arthas.Demo;
+
+public partial class App
 {
-    public partial class App : Application
+    protected override void OnStartup(StartupEventArgs e)
     {
+        base.OnStartup(e);
+
+        var mainModel = new Main_Model();
+        var window = mainModel.CreateWindow();
+        MainWindow = window;
+        MainWindow.Show();
     }
 }

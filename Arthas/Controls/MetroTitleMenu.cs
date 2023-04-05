@@ -1,18 +1,12 @@
-﻿using Arthas.Utility.Element;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
+using Arthas.Utility.Element;
 
-namespace Arthas.Controls
+namespace Arthas.Controls;
+
+public class MetroTitleMenu : Menu
 {
-    public class MetroTitleMenu : Menu
+    static MetroTitleMenu()
     {
-        public MetroTitleMenu()
-        {
-            Utility.Refresh(this);
-        }
-
-        static MetroTitleMenu()
-        {
-            ElementBase.DefaultStyle<MetroTitleMenu>(DefaultStyleKeyProperty);
-        }
+        ElementBase.DefaultStyle<MetroTitleMenu>(DefaultStyleKeyProperty);
     }
 }

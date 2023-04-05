@@ -1,18 +1,12 @@
-﻿using Arthas.Utility.Element;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
+using Arthas.Utility.Element;
 
-namespace Arthas.Controls
+namespace Arthas.Controls;
+
+public class MetroComboBoxItem : ComboBoxItem
 {
-    public class MetroComboBoxItem : ComboBoxItem
+    static MetroComboBoxItem()
     {
-        public MetroComboBoxItem()
-        {
-            Utility.Refresh(this);
-        }
-
-        static MetroComboBoxItem()
-        {
-            ElementBase.DefaultStyle<MetroComboBoxItem>(DefaultStyleKeyProperty);
-        }
+        ElementBase.DefaultStyle<MetroComboBoxItem>(DefaultStyleKeyProperty);
     }
 }

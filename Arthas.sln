@@ -7,6 +7,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arthas.Demo", "Arthas.Demo\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arthas", "Arthas\Arthas.csproj", "{F5DBBC65-F7D3-4A0D-8A9F-3DAFD3DEB7ED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{FE8A96FA-DB1E-45FA-A623-0C222B8B6ACC}"
+	ProjectSection(SolutionItems) = preProject
+		Build.bat = Build.bat
+		Directory.Build.props = Directory.Build.props
+		README.md = README.md
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arthas.Shell", "Arthas.Shell\Arthas.Shell.csproj", "{CDE22618-45CA-45DE-ABDD-2FE46F3EAE6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +41,14 @@ Global
 		{F5DBBC65-F7D3-4A0D-8A9F-3DAFD3DEB7ED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F5DBBC65-F7D3-4A0D-8A9F-3DAFD3DEB7ED}.Release|x86.ActiveCfg = Release|Any CPU
 		{F5DBBC65-F7D3-4A0D-8A9F-3DAFD3DEB7ED}.Release|x86.Build.0 = Release|Any CPU
+		{CDE22618-45CA-45DE-ABDD-2FE46F3EAE6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE22618-45CA-45DE-ABDD-2FE46F3EAE6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE22618-45CA-45DE-ABDD-2FE46F3EAE6B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CDE22618-45CA-45DE-ABDD-2FE46F3EAE6B}.Debug|x86.Build.0 = Debug|Any CPU
+		{CDE22618-45CA-45DE-ABDD-2FE46F3EAE6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE22618-45CA-45DE-ABDD-2FE46F3EAE6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE22618-45CA-45DE-ABDD-2FE46F3EAE6B}.Release|x86.ActiveCfg = Release|Any CPU
+		{CDE22618-45CA-45DE-ABDD-2FE46F3EAE6B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,13 +1,12 @@
-﻿using Arthas.Utility.Element;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
+using Arthas.Utility.Element;
 
-namespace Arthas.Controls
+namespace Arthas.Controls;
+
+public class MetroTextButton : Button
 {
-    public class MetroTextButton : Button
+    static MetroTextButton()
     {
-        static MetroTextButton()
-        {
-            ElementBase.DefaultStyle<MetroTextButton>(DefaultStyleKeyProperty);
-        }
+        ElementBase.DefaultStyle<MetroTextButton>(DefaultStyleKeyProperty);
     }
 }

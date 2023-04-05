@@ -2,4 +2,4 @@
 using System.Windows.Markup;
 
 [assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)]
-[assembly: XmlnsDefinition("https://github.com/1217950746/Arthas-WPFUI", "Arthas.Controls")]
+[assembly: XmlnsDefinition("http://schemas.microsoft.com/winfx/2006/xaml/presentation", "Arthas.Controls")]

@@ -1,14 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>netcoreapp3.0;net461</TargetFrameworks>
-        <LangVersion>latest</LangVersion>
-        <UseWPF>true</UseWPF>
         <OutputType>WinExe</OutputType>
+        <ApplicationManifest>App.manifest</ApplicationManifest>
+        <IsPackable>false</IsPackable>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="..\Arthas\Arthas.csproj" />
+        <Resource Include="Resources\**" />
     </ItemGroup>
     <ItemGroup>
-        <Resource Include="Resources\**" />
+        <ProjectReference Include="..\Arthas\Arthas.csproj" />
     </ItemGroup>
 </Project>

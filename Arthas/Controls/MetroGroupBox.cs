@@ -1,13 +1,12 @@
-﻿using Arthas.Utility.Element;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
+using Arthas.Utility.Element;
 
-namespace Arthas.Controls
+namespace Arthas.Controls;
+
+public class MetroGroupBox : GroupBox
 {
-    public class MetroGroupBox : GroupBox
+    static MetroGroupBox()
     {
-        static MetroGroupBox()
-        {
-            ElementBase.DefaultStyle<MetroGroupBox>(DefaultStyleKeyProperty);
-        }
+        ElementBase.DefaultStyle<MetroGroupBox>(DefaultStyleKeyProperty);
     }
 }

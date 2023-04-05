@@ -2,84 +2,83 @@
 using System.Windows;
 using System.Windows.Data;
 
-namespace Arthas.Controls.Converter
+namespace Arthas.Converter;
+
+public class DoubleToThickness : IValueConverter
 {
-    public class DoubleToThickness : IValueConverter
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        public object Convert(object value, System.Type targetType, object parameter, CultureInfo culture)
+        if (value != null)
         {
-            if (value != null)
-            {
-                if (parameter != null)
+            if (parameter != null)
+                switch (parameter.ToString())
                 {
-                    switch (parameter.ToString())
-                    {
-                        case "Left":
-                            return new Thickness(System.Convert.ToDouble(value), 0, 0, 0);
+                    case "Left":
+                        return new Thickness(System.Convert.ToDouble(value), 0, 0, 0);
 
-                        case "Top":
-                            return new Thickness(0, System.Convert.ToDouble(value), 0, 0);
+                    case "Top":
+                        return new Thickness(0, System.Convert.ToDouble(value), 0, 0);
 
-                        case "Right":
-                            return new Thickness(0, 0, System.Convert.ToDouble(value), 0);
+                    case "Right":
+                        return new Thickness(0, 0, System.Convert.ToDouble(value), 0);
 
-                        case "Buttom":
-                            return new Thickness(0, 0, 0, System.Convert.ToDouble(value));
+                    case "Buttom":
+                        return new Thickness(0, 0, 0, System.Convert.ToDouble(value));
 
-                        case "LeftTop":
-                            return new Thickness(System.Convert.ToDouble(value), System.Convert.ToDouble(value), 0, 0);
+                    case "LeftTop":
+                        return new Thickness(System.Convert.ToDouble(value), System.Convert.ToDouble(value), 0, 0);
 
-                        case "LeftButtom":
-                            return new Thickness(System.Convert.ToDouble(value), 0, 0, System.Convert.ToDouble(value));
+                    case "LeftButtom":
+                        return new Thickness(System.Convert.ToDouble(value), 0, 0, System.Convert.ToDouble(value));
 
-                        case "RightTop":
-                            return new Thickness(0, System.Convert.ToDouble(value), System.Convert.ToDouble(value), 0);
+                    case "RightTop":
+                        return new Thickness(0, System.Convert.ToDouble(value), System.Convert.ToDouble(value), 0);
 
-                        case "RigthButtom":
-                            return new Thickness(0, 0, System.Convert.ToDouble(value), System.Convert.ToDouble(value));
+                    case "RigthButtom":
+                        return new Thickness(0, 0, System.Convert.ToDouble(value), System.Convert.ToDouble(value));
 
-                        case "LeftRight":
-                            return new Thickness(System.Convert.ToDouble(value), 0, System.Convert.ToDouble(value), 0);
+                    case "LeftRight":
+                        return new Thickness(System.Convert.ToDouble(value), 0, System.Convert.ToDouble(value), 0);
 
-                        case "TopButtom":
-                            return new Thickness(0, System.Convert.ToDouble(value), 0, System.Convert.ToDouble(value));
+                    case "TopButtom":
+                        return new Thickness(0, System.Convert.ToDouble(value), 0, System.Convert.ToDouble(value));
 
-                        default:
-                            return new Thickness(System.Convert.ToDouble(value));
-                    }
+                    default:
+                        return new Thickness(System.Convert.ToDouble(value));
                 }
-                return new Thickness(System.Convert.ToDouble(value));
-            }
-            return new Thickness(0);
+
+            return new Thickness(System.Convert.ToDouble(value));
         }
 
-        public object ConvertBack(object value, System.Type targetType, object parameter, CultureInfo culture)
+        return new Thickness(0);
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        if (value != null)
         {
-            if (value != null)
-            {
-                if (parameter != null)
+            if (parameter != null)
+                switch (parameter.ToString())
                 {
-                    switch (parameter.ToString())
-                    {
-                        case "Left":
-                            return ((Thickness)value).Left;
+                    case "Left":
+                        return ((Thickness)value).Left;
 
-                        case "Top":
-                            return ((Thickness)value).Top;
+                    case "Top":
+                        return ((Thickness)value).Top;
 
-                        case "Right":
-                            return ((Thickness)value).Right;
+                    case "Right":
+                        return ((Thickness)value).Right;
 
-                        case "Buttom":
-                            return ((Thickness)value).Bottom;
+                    case "Buttom":
+                        return ((Thickness)value).Bottom;
 
-                        default:
-                            return ((Thickness)value).Left;
-                    }
+                    default:
+                        return ((Thickness)value).Left;
                 }
-                return ((Thickness)value).Left;
-            }
-            return 0.0;
+
+            return ((Thickness)value).Left;
         }
+
+        return 0.0;
     }
 }

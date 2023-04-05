@@ -1,26 +1,21 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:Metro="clr-namespace:Arthas.Controls">
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroBase.xaml" />
-    </ResourceDictionary.MergedDictionaries>
-
-    <Style TargetType="{x:Type Metro:MetroExpander}">
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:metro="clr-namespace:Arthas.Controls">
+    <Style TargetType="{x:Type metro:MetroExpander}">
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
-
         <Setter Property="MinWidth" Value="180" />
         <Setter Property="CanHide" Value="True" />
         <Setter Property="IsExpanded" Value="False" />
         <Setter Property="Hint" Value="{x:Null}" />
         <Setter Property="HintBackground" Value="#7F000000" />
         <Setter Property="HintForeground" Value="#FFFFFF" />
-
         <Style.Triggers>
             <Trigger Property="CanHide" Value="True">
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type Metro:MetroExpander}">
+                        <ControlTemplate TargetType="{x:Type metro:MetroExpander}">
                             <Grid Background="#7FFFFFFF">
                                 <VisualStateManager.VisualStateGroups>
                                     <VisualStateGroup>
@@ -63,10 +58,10 @@
                                             <ColumnDefinition x:Name="algleWidth" Width="Auto" />
                                         </Grid.ColumnDefinitions>
                                         <Image Width="12" Height="12" Margin="10,0,0,0" VerticalAlignment="Center" Source="{TemplateBinding Icon}" Opacity="0.7" />
-                                        <Metro:MetroTextBlock Grid.Column="1" Text="{TemplateBinding Header}" Margin="10,8,5,8" VerticalAlignment="Center" HorizontalAlignment="Left" Opacity="0.65" />
-                                        <Metro:MetroBorder    Grid.Column="2" AutoCornerRadius="True" Margin="0,0,5,0" VerticalAlignment="Center" Background="{TemplateBinding HintBackground}">
-                                            <Metro:MetroTextBlock VerticalAlignment="Center" Margin="8,1" Text="{TemplateBinding Hint}" Foreground="{TemplateBinding HintForeground}" />
-                                        </Metro:MetroBorder>
+                                        <metro:MetroTextBlock Grid.Column="1" Text="{TemplateBinding Header}" Margin="10,8,5,8" VerticalAlignment="Center" HorizontalAlignment="Left" Opacity="0.65" />
+                                        <metro:MetroBorder Grid.Column="2" AutoCornerRadius="True" Margin="0,0,5,0" VerticalAlignment="Center" Background="{TemplateBinding HintBackground}">
+                                            <metro:MetroTextBlock VerticalAlignment="Center" Margin="8,1" Text="{TemplateBinding Hint}" Foreground="{TemplateBinding HintForeground}" />
+                                        </metro:MetroBorder>
                                         <Grid Grid.Column="3" Margin="10,0" VerticalAlignment="Center">
                                             <Polyline Points="0,0 5,5 0,10" Stroke="#000000" RenderTransformOrigin="0.5,0.5" Opacity="0.65">
                                                 <Polyline.RenderTransform>
@@ -76,7 +71,7 @@
                                                 </Polyline.RenderTransform>
                                             </Polyline>
                                         </Grid>
-                                        <Metro:MetroFocusButton Grid.ColumnSpan="4" Foreground="#00000000" MouseMoveForeground="#0C000000" BorderThickness="0" MouseMoveBorderThickness="0" Command="Metro:MetroExpander.ButtonClickCommand" />
+                                        <metro:MetroFocusButton Grid.ColumnSpan="4" Foreground="#00000000" MouseMoveForeground="#0C000000" BorderThickness="0" MouseMoveBorderThickness="0" Command="metro:MetroExpander.ButtonClickCommand" />
                                     </Grid>
                                 </Border>
                                 <Grid x:Name="height" Grid.Row="1" Background="#00000000" Height="{Binding ActualHeight,ElementName=content}" ClipToBounds="True">
@@ -105,7 +100,7 @@
             <Trigger Property="CanHide" Value="False">
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type Metro:MetroExpander}">
+                        <ControlTemplate TargetType="{x:Type metro:MetroExpander}">
                             <Grid Background="#7FFFFFFF">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto" />
@@ -119,10 +114,10 @@
                                             <ColumnDefinition x:Name="hintWidth" Width="Auto" />
                                         </Grid.ColumnDefinitions>
                                         <Image Width="12" Height="12" Margin="10,0,0,0" VerticalAlignment="Center" Source="{TemplateBinding Icon}" Opacity="0.7" />
-                                        <Metro:MetroTextBlock Grid.Column="1" Text="{TemplateBinding Header}" Margin="10,8,5,8" VerticalAlignment="Center" HorizontalAlignment="Left" Opacity="0.65" />
-                                        <Metro:MetroBorder    Grid.Column="2" AutoCornerRadius="True" Margin="0,0,5,0" VerticalAlignment="Center" Background="{TemplateBinding HintBackground}">
-                                            <Metro:MetroTextBlock VerticalAlignment="Center" Margin="8,1" Text="{TemplateBinding Hint}" Foreground="{TemplateBinding HintForeground}" />
-                                        </Metro:MetroBorder>
+                                        <metro:MetroTextBlock Grid.Column="1" Text="{TemplateBinding Header}" Margin="10,8,5,8" VerticalAlignment="Center" HorizontalAlignment="Left" Opacity="0.65" />
+                                        <metro:MetroBorder Grid.Column="2" AutoCornerRadius="True" Margin="0,0,5,0" VerticalAlignment="Center" Background="{TemplateBinding HintBackground}">
+                                            <metro:MetroTextBlock VerticalAlignment="Center" Margin="8,1" Text="{TemplateBinding Hint}" Foreground="{TemplateBinding HintForeground}" />
+                                        </metro:MetroBorder>
                                     </Grid>
                                 </Border>
                                 <Border Grid.Row="1" Background="#7FFFFFFF" BorderBrush="#e6e6e6" BorderThickness="0,0,0,1">

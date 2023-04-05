@@ -1,91 +1,65 @@
-﻿using Arthas.Themes;
-using Arthas.Utility.Element;
-using System;
-using System.Windows;
+﻿using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using Arthas.Shell;
 
-namespace Arthas.Controls
+namespace Arthas.Controls;
+
+public class MetroWindow : MetroWindowBase
 {
-    public class MetroWindow : Window
+    static MetroWindow()
     {
-        public static readonly DependencyProperty IsSubWindowShowProperty = ElementBase.Property<MetroWindow, bool>(nameof(IsSubWindowShowProperty), false);
-        public static readonly DependencyProperty MenuProperty = ElementBase.Property<MetroWindow, object>(nameof(MenuProperty), null);
-        public static readonly new DependencyProperty BorderBrushProperty = ElementBase.Property<MetroWindow, Brush>(nameof(BorderBrushProperty));
-        public static readonly DependencyProperty TitleForegroundProperty = ElementBase.Property<MetroWindow, Brush>(nameof(TitleForegroundProperty));
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroWindow), new FrameworkPropertyMetadata(typeof(MetroWindow)));
+    }
 
-        public bool IsSubWindowShow { get { return (bool)GetValue(IsSubWindowShowProperty); } set { SetValue(IsSubWindowShowProperty, value); GoToState(); } }
-        public object Menu { get { return GetValue(MenuProperty); } set { SetValue(MenuProperty, value); } }
-        public new Brush BorderBrush { get { return (Brush)GetValue(BorderBrushProperty); } set { SetValue(BorderBrushProperty, value); BorderBrushChange(value); } }
-        public Brush TitleForeground { get { return (Brush)GetValue(TitleForegroundProperty); } set { SetValue(TitleForegroundProperty, value); } }
+    public static readonly DependencyProperty CaptionBackgroundProperty = DependencyProperty.Register(nameof(CaptionBackground), typeof(Brush), typeof(MetroWindow));
 
-        void BorderBrushChange(Brush brush)
-        {
-            if (IsLoaded)
-            {
-                Theme.Switch(this);
-            }
-        }
+    public Brush? CaptionBackground
+    {
+        get => (Brush?)GetValue(CaptionBackgroundProperty);
+        set => SetValue(CaptionBackgroundProperty, value);
+    }
 
-        void GoToState()
-        {
-            ElementBase.GoToState(this, IsSubWindowShow ? "Enabled" : "Disable");
-        }
+    public static readonly DependencyProperty CaptionForegroundProperty = DependencyProperty.Register(nameof(CaptionForeground), typeof(Brush), typeof(MetroWindow));
 
-        public object ReturnValue { get; set; } = null;
-        public bool EscClose { get; set; } = false;
+    public Brush? CaptionForeground
+    {
+        get => (Brush?)GetValue(CaptionForegroundProperty);
+        set => SetValue(CaptionForegroundProperty, value);
+    }
 
-        protected override void OnInitialized(EventArgs e)
-        {
-            base.OnInitialized(e);
+    public static readonly DependencyProperty CaptionContentProperty = DependencyProperty.Register(nameof(CaptionContent), typeof(object), typeof(MetroWindow));
 
-            WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            AllowsTransparency = false;
-            if (WindowStyle == WindowStyle.None)
-            {
-                WindowStyle = WindowStyle.SingleBorderWindow;
-            }
-        }
+    public object? CaptionContent
+    {
+        get => GetValue(CaptionContentProperty);
+        set => SetValue(CaptionContentProperty, value);
+    }
 
-        public MetroWindow()
-        {
-            // 修复WindowChrome导致的窗口大小错误
-            var sizeToContent = SizeToContent.Manual;
-            Loaded += (ss, ee) =>
-            {
-                sizeToContent = SizeToContent;
-            };
-            ContentRendered += (ss, ee) =>
-            {
-                SizeToContent = SizeToContent.Manual;
-                Width = ActualWidth;
-                Height = ActualHeight;
-                SizeToContent = sizeToContent;
-            };
+    Grid? PART_Caption;
 
-            KeyUp += delegate (object sender, KeyEventArgs e)
-            {
-                if (e.Key == Key.Escape && EscClose)
-                {
-                    Close();
-                }
-            };
-            StateChanged += delegate
-              {
-                  if (ResizeMode == ResizeMode.CanMinimize || ResizeMode == ResizeMode.NoResize)
-                  {
-                      if (WindowState == WindowState.Maximized)
-                      {
-                          WindowState = WindowState.Normal;
-                      }
-                  }
-              };
-            Utility.Refresh(this);
-        }
+    public override void OnApplyTemplate()
+    {
+        base.OnApplyTemplate();
 
-        static MetroWindow()
-        {
-            ElementBase.DefaultStyle<MetroWindow>(DefaultStyleKeyProperty);
-        }
+        PART_Caption = GetTemplateChild(nameof(PART_Caption)) as Grid;
+
+        if (PART_Caption is null)
+            return;
+
+        PART_Caption.MouseLeftButtonDown += ElementOnMouseLeftButtonDown;
+    }
+
+    void ElementOnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    {
+        if (Handle == IntPtr.Zero)
+            return;
+
+        if (e.ClickCount == 2)
+            ChangWindowState();
+
+        else
+            SendCaptionMessage();
     }
 }
