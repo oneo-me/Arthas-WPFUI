@@ -10,6 +10,8 @@
 - 不会增加新功能
 - 如果时间允许，我会开发一个基于 [Avalonia](https://avaloniaui.net/) 的界面库（与 WPF 写法类似，但可以跨主流平台）
 
+## 截屏
+
 ![](Screenshots/1.png)
 
 ## 支持
