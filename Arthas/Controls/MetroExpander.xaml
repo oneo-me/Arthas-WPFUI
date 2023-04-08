@@ -69,7 +69,7 @@
                                                 </Polyline.RenderTransform>
                                             </Polyline>
                                         </Grid>
-                                        <metro:MetroFocusButton Grid.ColumnSpan="4" Foreground="#00000000" MouseMoveForeground="#0C000000" BorderThickness="0" MouseMoveBorderThickness="0" Command="metro:MetroExpander.ButtonClickCommand" />
+                                        <metro:MetroFocusButton Grid.ColumnSpan="4" Grid.Column="0" Foreground="#00000000" MouseMoveForeground="#0C000000" BorderThickness="0" MouseMoveBorderThickness="0" />
                                     </Grid>
                                 </Border>
                                 <Grid x:Name="height" Grid.Row="1" Background="#00000000" Height="{Binding ActualHeight,ElementName=content}" ClipToBounds="True">

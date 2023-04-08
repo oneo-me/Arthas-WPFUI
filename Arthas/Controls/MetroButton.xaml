@@ -54,11 +54,11 @@
                             <Setter TargetName="border" Property="Opacity" Value="0.5" />
                             <Setter TargetName="back" Property="Margin" Value="0" />
                         </Trigger>
-                        <Trigger Property="MetroButtonState" Value="Green">
+                        <Trigger Property="ButtonState" Value="Green">
                             <Setter TargetName="border" Property="Background" Value="#99cb8a" />
                             <Setter TargetName="back" Property="Background" Value="#99cb8a" />
                         </Trigger>
-                        <Trigger Property="MetroButtonState" Value="Red">
+                        <Trigger Property="ButtonState" Value="Red">
                             <Setter TargetName="border" Property="Background" Value="#e99595" />
                             <Setter TargetName="back" Property="Background" Value="#e99595" />
                         </Trigger>

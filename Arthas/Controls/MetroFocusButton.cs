@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using Arthas.Utility.Element;
 
 namespace Arthas.Controls;
 
@@ -59,6 +58,6 @@ public class MetroFocusButton : Button
 
     static MetroFocusButton()
     {
-        ElementBase.DefaultStyle<MetroFocusButton>(DefaultStyleKeyProperty);
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroFocusButton), new FrameworkPropertyMetadata(typeof(MetroFocusButton)));
     }
 }

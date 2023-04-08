@@ -5,9 +5,9 @@
         <IsPackable>false</IsPackable>
     </PropertyGroup>
     <ItemGroup>
-        <Resource Include="Resources\**" />
+        <Resource Include="Resources\**"/>
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\Arthas\Arthas.csproj" />
+        <ProjectReference Include="..\Arthas\Arthas.csproj"/>
     </ItemGroup>
 </Project>

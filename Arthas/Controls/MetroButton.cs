@@ -1,28 +1,20 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using Arthas.Utility.Element;
 
 namespace Arthas.Controls;
 
-public enum ButtonState
-{
-    None,
-    Red,
-    Green
-}
-
 public class MetroButton : Button
 {
-    public static readonly DependencyProperty MetroButtonStateProperty = ElementBase.Property<MetroButton, ButtonState>(nameof(MetroButtonStateProperty), ButtonState.None);
-
-    public ButtonState MetroButtonState
-    {
-        get => (ButtonState)GetValue(MetroButtonStateProperty);
-        set => SetValue(MetroButtonStateProperty, value);
-    }
-
     static MetroButton()
     {
-        ElementBase.DefaultStyle<MetroButton>(DefaultStyleKeyProperty);
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroButton), new FrameworkPropertyMetadata(typeof(MetroButton)));
+    }
+
+    public static readonly DependencyProperty ButtonStateProperty = DependencyProperty.Register(nameof(ButtonState), typeof(MetroButtonState), typeof(MetroButton), new(MetroButtonState.None));
+
+    public MetroButtonState ButtonState
+    {
+        get => (MetroButtonState)GetValue(ButtonStateProperty);
+        set => SetValue(ButtonStateProperty, value);
     }
 }

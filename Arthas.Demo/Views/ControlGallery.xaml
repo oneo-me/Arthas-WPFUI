@@ -23,9 +23,9 @@
                     <MetroGroup Header="进度条">
                         <Grid>
                             <StackPanel Background="#00000000">
-                                <MetroProgressBar Margin="5" Value="15" ProgressBarHeight="30" CornerRadius="0" ProgressBarState="None" IsEnabled="False" />
-                                <MetroProgressBar x:Name="pb1" Title="MetroProgressBar 调整" Margin="5" Value="20" ProgressBarHeight="20" CornerRadius="0" ProgressBarState="None" TextHorizontalAlignment="Center" />
-                                <MetroProgressBar x:Name="pb2" Title="MetroProgressBar 正常" Margin="5" Value="0" TextHorizontalAlignment="Right" Maximum="50" />
+                                <MetroProgressBar Margin="5" Value="15" CornerRadius="0" ProgressBarState="None" IsEnabled="False" />
+                                <MetroProgressBar Title="MetroProgressBar 调整" Margin="5" Value="20" CornerRadius="0" ProgressBarState="None" TextHorizontalAlignment="Center" />
+                                <MetroProgressBar Title="MetroProgressBar 正常" Margin="5" Value="0" TextHorizontalAlignment="Right" Maximum="50" />
                                 <MetroProgressBar Title="MetroProgressBar 错误" Margin="5" Value="40" ProgressBarState="Error" />
                             </StackPanel>
                         </Grid>
@@ -35,8 +35,8 @@
                     <MetroGroup Header="画布背景">
                         <Grid>
                             <StackPanel>
-                                <MetroCanvasGrid Height="100" Margin="5" />
-                                <MetroCanvasGrid Height="100" Margin="5" Background="Red" GridOpacity="0.5" IsApplyTheme="False" Viewport="0 0 20 20" CornerRadius="10" />
+                                <MetroGridTile Height="100" Margin="5" />
+                                <MetroGridTile Height="100" Margin="5" Background="Red" TileOpacity="0.5" TileSize="20 20" />
                             </StackPanel>
                         </Grid>
                     </MetroGroup>
@@ -47,7 +47,7 @@
                             <MetroSwitch Content="关闭禁用" Margin="10" IsEnabled="False" />
                             <MetroSwitch Content="打开禁用" IsChecked="true" Margin="10" IsEnabled="False" />
                             <MetroSwitch Content="可以修改对齐方式" IsChecked="true" Margin="10" TextHorizontalAlignment="Right" />
-                            <MetroSwitch x:Name="ts" Content="特殊动画" Margin="10" CornerRadius="100" />
+                            <MetroSwitch Content="特殊动画" Margin="10" CornerRadius="100" />
                             <MetroSwitch Content="方块模式" Margin="10" CornerRadius="2" BorderCornerRadius="3" />
                         </StackPanel>
                     </MetroGroup>
@@ -58,8 +58,8 @@
                             <MetroTextBox InputHint="InputHint..." Margin="0,10,0,0" />
                             <MetroTextBox Margin="0,10,0,0" />
                             <MetroTextBox Title="Default Title" InputHint="InputHint..." Margin="0,10,0,0" />
-                            <MetroTextBox x:Name="check" Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" />
-                            <MetroTextBox x:Name="check1" Text="0123456789" Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" />
+                            <MetroTextBox Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" />
+                            <MetroTextBox Text="0123456789" Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" />
                             <MetroTextBox Title="Default Title" InputHint="InputHint..." Text="This is Content!" ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" MultipleLine="True" />
                             <MetroTextBox Title="Default Title" InputHint="InputHint..." ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" IsEnabled="False" />
                             <MetroTextBox Title="Default Title" InputHint="InputHint..." Text="已经输入内容且禁用" ButtonTitle="Button" Margin="0,10,0,0" Icon="../Resources/editIcon.png" IsEnabled="False" />
@@ -70,16 +70,16 @@
                     <MetroGroup Header="按钮">
                         <StackPanel HorizontalAlignment="Center">
                             <StackPanel Orientation="Horizontal">
-                                <MetroButton MetroButtonState="None" Content="默认颜色" IsEnabled="False" Margin="10" />
-                                <MetroButton MetroButtonState="None" Content="默认颜色" Command="{Binding CmdSample}" IsEnabled="{Binding BtnEnabled}" Margin="10" />
+                                <MetroButton ButtonState="None" Content="默认颜色" IsEnabled="False" Margin="10" />
+                                <MetroButton ButtonState="None" Content="默认颜色" Margin="10" />
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <MetroButton MetroButtonState="Red" Content="错误颜色" IsEnabled="False" Margin="10" />
-                                <MetroButton MetroButtonState="Red" Content="错误颜色" Command="{Binding CmdSampleWithParam}" CommandParameter="Bad" IsEnabled="{Binding BtnEnabled}" Margin="10" />
+                                <MetroButton ButtonState="Red" Content="错误颜色" IsEnabled="False" Margin="10" />
+                                <MetroButton ButtonState="Red" Content="错误颜色" Margin="10" />
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <MetroButton MetroButtonState="Green" Content="正确颜色" IsEnabled="False" Margin="10" />
-                                <MetroButton MetroButtonState="Green" Content="正确颜色" Command="{Binding CmdSampleWithParam}" CommandParameter="Good" IsEnabled="{Binding BtnEnabled}" Margin="10" />
+                                <MetroButton ButtonState="Green" Content="正确颜色" IsEnabled="False" Margin="10" />
+                                <MetroButton ButtonState="Green" Content="正确颜色" Margin="10" />
                             </StackPanel>
                         </StackPanel>
                     </MetroGroup>

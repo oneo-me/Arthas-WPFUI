@@ -1,14 +1,11 @@
 ﻿using System.Windows;
 using System.Windows.Controls.Primitives;
-using Arthas.Utility.Element;
 
 namespace Arthas.Controls;
 
 public class MetroSwitch : ToggleButton
 {
-    public static readonly DependencyProperty TextHorizontalAlignmentProperty = ElementBase.Property<MetroSwitch, HorizontalAlignment>(nameof(TextHorizontalAlignmentProperty), HorizontalAlignment.Left);
-    public static readonly DependencyProperty CornerRadiusProperty = ElementBase.Property<MetroSwitch, CornerRadius>(nameof(CornerRadiusProperty), new(10));
-    public static readonly DependencyProperty BorderCornerRadiusProperty = ElementBase.Property<MetroSwitch, CornerRadius>(nameof(BorderCornerRadiusProperty), new(12));
+    public static readonly DependencyProperty TextHorizontalAlignmentProperty = DependencyProperty.Register(nameof(TextHorizontalAlignment), typeof(HorizontalAlignment), typeof(MetroSwitch), new(HorizontalAlignment.Left));
 
     public HorizontalAlignment TextHorizontalAlignment
     {
@@ -16,11 +13,15 @@ public class MetroSwitch : ToggleButton
         set => SetValue(TextHorizontalAlignmentProperty, value);
     }
 
+    public static readonly DependencyProperty CornerRadiusProperty = DependencyProperty.Register(nameof(CornerRadius), typeof(CornerRadius), typeof(MetroSwitch), new(new CornerRadius(10)));
+
     public CornerRadius CornerRadius
     {
         get => (CornerRadius)GetValue(CornerRadiusProperty);
         set => SetValue(CornerRadiusProperty, value);
     }
+
+    public static readonly DependencyProperty BorderCornerRadiusProperty = DependencyProperty.Register(nameof(BorderCornerRadius), typeof(CornerRadius), typeof(MetroSwitch), new(new CornerRadius(12)));
 
     public CornerRadius BorderCornerRadius
     {
@@ -32,24 +33,24 @@ public class MetroSwitch : ToggleButton
     {
         Loaded += delegate
         {
-            ElementBase.GoToState(this, (bool)IsChecked ? "OpenLoaded" : "CloseLoaded");
+            VisualStateManager.GoToState(this, IsChecked is true ? "OpenLoaded" : "CloseLoaded", false);
         };
     }
 
     protected override void OnChecked(RoutedEventArgs e)
     {
         base.OnChecked(e);
-        ElementBase.GoToState(this, "Open");
+        VisualStateManager.GoToState(this, "Open", false);
     }
 
     protected override void OnUnchecked(RoutedEventArgs e)
     {
         base.OnChecked(e);
-        ElementBase.GoToState(this, "Close");
+        VisualStateManager.GoToState(this, "Close", false);
     }
 
     static MetroSwitch()
     {
-        ElementBase.DefaultStyle<MetroSwitch>(DefaultStyleKeyProperty);
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroSwitch), new FrameworkPropertyMetadata(typeof(MetroSwitch)));
     }
 }

@@ -1,5 +1,5 @@
-﻿using System.Windows.Controls;
-using Arthas.Utility.Element;
+﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace Arthas.Controls;
 
@@ -7,6 +7,6 @@ public class MetroMenuSeparator : Separator
 {
     static MetroMenuSeparator()
     {
-        ElementBase.DefaultStyle<MetroMenuSeparator>(DefaultStyleKeyProperty);
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroMenuSeparator), new FrameworkPropertyMetadata(typeof(MetroMenuSeparator)));
     }
 }

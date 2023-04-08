@@ -2,7 +2,6 @@
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using Arthas.Utility.Element;
 
 namespace Arthas.Controls;
 
@@ -81,9 +80,9 @@ public class MetroTextBox : TextBox
         set => SetValue(CornerRadiusProperty, value);
     }
 
-    public Func<string, bool> ErrorCheckAction { get; set; }
+    public Func<string, bool>? ErrorCheckAction { get; set; }
 
-    public event EventHandler ButtonClick;
+    public event EventHandler? ButtonClick;
 
     public MetroTextBox()
     {
@@ -98,8 +97,7 @@ public class MetroTextBox : TextBox
         };
         CommandBindings.Add(new(ButtonClickCommand, delegate
         {
-            if (ButtonClick != null)
-                ButtonClick(this, null);
+            ButtonClick?.Invoke(this, EventArgs.Empty);
         }));
     }
 
@@ -112,6 +110,6 @@ public class MetroTextBox : TextBox
 
     static MetroTextBox()
     {
-        ElementBase.DefaultStyle<MetroTextBox>(DefaultStyleKeyProperty);
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroTextBox), new FrameworkPropertyMetadata(typeof(MetroTextBox)));
     }
 }

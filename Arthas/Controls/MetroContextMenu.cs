@@ -1,5 +1,5 @@
-﻿using System.Windows.Controls;
-using Arthas.Utility.Element;
+﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace Arthas.Controls;
 
@@ -7,6 +7,6 @@ public class MetroContextMenu : ContextMenu
 {
     static MetroContextMenu()
     {
-        ElementBase.DefaultStyle<MetroContextMenu>(DefaultStyleKeyProperty);
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroContextMenu), new FrameworkPropertyMetadata(typeof(MetroContextMenu)));
     }
 }

@@ -13,7 +13,7 @@
                             <ColumnDefinition Width="0" />
                         </Grid.ColumnDefinitions>
                         <Rectangle x:Name="backRectangle" Fill="#ffffff" Opacity="0" />
-                        <Grid x:Name="title" Background="#00000000" VerticalAlignment="Center">
+                        <Grid Grid.Column="0" x:Name="title" Background="#00000000" VerticalAlignment="Center">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" x:Name="iconWidth" />
                                 <ColumnDefinition Width="Auto" />
@@ -23,8 +23,8 @@
                             <metro:MetroTextBlock Grid.Column="1" Text="{TemplateBinding Header}" Foreground="#ffffff" Margin="10,0" />
                             <Polyline Grid.Column="2" Points="0,0 5,5 10,0" Stroke="#ffffff" VerticalAlignment="Center" Margin="0,0,10,0" />
                         </Grid>
-                        <Rectangle Grid.Column="3" Fill="#ffffff" Opacity="0.2" Height="12" />
-                        <Popup x:Name="PART_Popup" AllowsTransparency="True" Focusable="False" IsOpen="{Binding IsSubmenuOpen, RelativeSource={RelativeSource TemplatedParent}}" PopupAnimation="Fade" Placement="Bottom">
+                        <Rectangle Grid.Column="1" Fill="#ffffff" Opacity="0.2" Height="12" />
+                        <Popup Grid.Column="0" x:Name="PART_Popup" AllowsTransparency="True" Focusable="False" IsOpen="{Binding IsSubmenuOpen, RelativeSource={RelativeSource TemplatedParent}}" PopupAnimation="Fade" Placement="Bottom">
                             <Border Background="#FFFFFF" Margin="10">
                                 <Border.Effect>
                                     <DropShadowEffect BlurRadius="10" Direction="0" Opacity="0.2" ShadowDepth="0" />

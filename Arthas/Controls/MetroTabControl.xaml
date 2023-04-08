@@ -47,13 +47,13 @@
                         <Border x:Name="contentPanel" Grid.Row="1" KeyboardNavigation.DirectionalNavigation="Contained" KeyboardNavigation.TabIndex="2" KeyboardNavigation.TabNavigation="Local">
                             <ContentPresenter x:Name="content" ContentSource="SelectedContent" ContentTemplate="{TemplateBinding SelectedContentTemplate}" Margin="{TemplateBinding Padding}" />
                         </Border>
-                        <Rectangle Fill="#f3f3f3" />
+                        <Rectangle Grid.Row="0" Fill="#f3f3f3" />
                         <!--
                         <metro:MetroVisualElement Visual="{Binding ElementName=contentPanel}" VisualOpacity="0.5" VisualBlurRadius="30" ClipToBounds="True" />
                         -->
-                        <Rectangle Height="1" Fill="#000000" Opacity="0.1" VerticalAlignment="Bottom" />
-                        <Rectangle Fill="#ffffff" Opacity="0.5" Margin="0,0,0,1" />
-                        <TabPanel x:Name="headerPanel" IsItemsHost="true" KeyboardNavigation.TabIndex="1" Panel.ZIndex="1" Margin="10,0" />
+                        <Rectangle Grid.Row="0" Height="1" Fill="#000000" Opacity="0.1" VerticalAlignment="Bottom" />
+                        <Rectangle Grid.Row="0" Fill="#ffffff" Opacity="0.5" Margin="0,0,0,1" />
+                        <TabPanel Grid.Row="0" x:Name="headerPanel" IsItemsHost="true" KeyboardNavigation.TabIndex="1" Panel.ZIndex="1" Margin="10,0" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

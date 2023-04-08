@@ -1,0 +1,36 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:metro="clr-namespace:Arthas.Controls">
+    <Style TargetType="{x:Type metro:MetroGridTile}">
+        <Setter Property="Background" Value="#000000" />
+        <Setter Property="TileSize" Value="16 16" />
+        <Setter Property="TileOpacity" Value="0.06" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="metro:MetroGridTile">
+                    <metro:MetroTile
+                        TileSize="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TileSize}">
+                        <metro:MetroTile.Tile>
+                            <Grid Opacity="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TileOpacity}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Border Grid.Row="0" Grid.Column="0"
+                                        Background="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Background}" />
+                                <Border Grid.Row="1" Grid.Column="1"
+                                        Background="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Background}" />
+                            </Grid>
+                        </metro:MetroTile.Tile>
+                        <ContentPresenter />
+                    </metro:MetroTile>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

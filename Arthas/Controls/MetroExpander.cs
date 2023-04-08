@@ -1,8 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Input;
 using System.Windows.Media;
-using Arthas.Utility.Element;
 
 namespace Arthas.Controls;
 
@@ -16,15 +14,13 @@ public class MetroExpander : ContentControl
     public static readonly DependencyProperty HintForegroundProperty = ElementBase.Property<MetroExpander, Brush>(nameof(HintForegroundProperty));
     public static readonly DependencyProperty IconProperty = ElementBase.Property<MetroExpander, ImageSource>(nameof(IconProperty), null);
 
-    public static RoutedUICommand ButtonClickCommand = ElementBase.Command<MetroExpander>(nameof(ButtonClickCommand));
-
     public bool IsExpanded
     {
         get => (bool)GetValue(IsExpandedProperty);
         set
         {
             SetValue(IsExpandedProperty, value);
-            ElementBase.GoToState(this, IsExpanded ? "Expand" : "Normal");
+            VisualStateManager.GoToState(this, IsExpanded ? "Expand" : "Normal", false);
         }
     }
 
@@ -64,8 +60,6 @@ public class MetroExpander : ContentControl
         set => SetValue(IconProperty, value);
     }
 
-    public event EventHandler Click;
-
     public MetroExpander()
     {
         Loaded += delegate
@@ -74,44 +68,13 @@ public class MetroExpander : ContentControl
                 IsExpanded = false;
             else if (!CanHide)
                 IsExpanded = true;
-            ElementBase.GoToState(this, IsExpanded ? "StartExpand" : "StartNormal");
+
+            VisualStateManager.GoToState(this, IsExpanded ? "StartExpand" : "StartNormal", false);
         };
-
-        CommandBindings.Add(new(ButtonClickCommand, delegate
-        {
-            if (CanHide && Content != null)
-                IsExpanded = !IsExpanded;
-            if (Click != null)
-                Click(this, null);
-        }));
-    }
-
-    public void Clear()
-    {
-        Content = new StackPanel();
-    }
-
-    public UIElementCollection Children
-    {
-        get
-        {
-            if (Content is StackPanel)
-                return (Content as StackPanel).Children;
-            if (Content is Grid)
-                return (Content as Grid).Children;
-            return null;
-        }
-    }
-
-    public void Add(FrameworkElement element)
-    {
-        if (!(Content is StackPanel))
-            Content = new StackPanel();
-        (Content as StackPanel).Children.Add(element);
     }
 
     static MetroExpander()
     {
-        ElementBase.DefaultStyle<MetroExpander>(DefaultStyleKeyProperty);
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroExpander), new FrameworkPropertyMetadata(typeof(MetroExpander)));
     }
 }

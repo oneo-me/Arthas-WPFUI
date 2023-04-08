@@ -1,6 +1,5 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using Arthas.Utility.Element;
 
 namespace Arthas.Controls;
 
@@ -8,8 +7,8 @@ public class MetroTabControl : TabControl
 {
     void SelectionState()
     {
-        ElementBase.GoToState(this, "SelectionStart");
-        ElementBase.GoToState(this, "SelectionEnd");
+        VisualStateManager.GoToState(this, "SelectionStart", false);
+        VisualStateManager.GoToState(this, "SelectionEnd", false);
     }
 
     protected override DependencyObject GetContainerForItemOverride()
@@ -21,9 +20,9 @@ public class MetroTabControl : TabControl
     {
         Loaded += delegate
         {
-            ElementBase.GoToState(this, "SelectionLoaded");
+            VisualStateManager.GoToState(this, "SelectionLoaded", false);
         };
-        SelectionChanged += delegate(object sender, SelectionChangedEventArgs e)
+        SelectionChanged += delegate(object _, SelectionChangedEventArgs e)
         {
             if (e.Source is MetroTabControl)
                 SelectionState();
@@ -32,6 +31,6 @@ public class MetroTabControl : TabControl
 
     static MetroTabControl()
     {
-        ElementBase.DefaultStyle<MetroTabControl>(DefaultStyleKeyProperty);
+        DefaultStyleKeyProperty.OverrideMetadata(typeof(MetroTabControl), new FrameworkPropertyMetadata(typeof(MetroTabControl)));
     }
 }

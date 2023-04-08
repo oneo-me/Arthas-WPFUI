@@ -19,6 +19,7 @@
         <ResourceDictionary Source="/Arthas;component/Controls/MetroScrollViewer.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroProgressBar.xaml" />
         <ResourceDictionary Source="/Arthas;component/Controls/MetroExpander.xaml" />
-        <ResourceDictionary Source="/Arthas;component/Controls/MetroCanvasGrid.xaml" />
+        <ResourceDictionary Source="/Arthas;component/Controls/MetroTile.xaml" />
+        <ResourceDictionary Source="/Arthas;component/Controls/MetroGridTile.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
